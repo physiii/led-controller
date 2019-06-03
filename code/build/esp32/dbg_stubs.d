@@ -24,7 +24,7 @@ dbg_stubs.o: /usr/local/src/esp/esp-idf/components/esp32/dbg_stubs.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
@@ -81,7 +81,7 @@ dbg_stubs.o: /usr/local/src/esp/esp-idf/components/esp32/dbg_stubs.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h:
 

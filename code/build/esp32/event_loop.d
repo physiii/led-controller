@@ -26,7 +26,7 @@ event_loop.o: /usr/local/src/esp/esp-idf/components/esp32/event_loop.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_wifi.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -186,7 +186,7 @@ event_loop.o: /usr/local/src/esp/esp-idf/components/esp32/event_loop.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

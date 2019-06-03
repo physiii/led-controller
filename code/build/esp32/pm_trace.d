@@ -1,6 +1,6 @@
 pm_trace.o: /usr/local/src/esp/esp-idf/components/esp32/pm_trace.c \
  /usr/local/src/esp/esp-idf/components/esp32/pm_trace.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/gpio.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
@@ -44,7 +44,7 @@ pm_trace.o: /usr/local/src/esp/esp-idf/components/esp32/pm_trace.c \
 
 /usr/local/src/esp/esp-idf/components/esp32/pm_trace.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/driver/include/driver/gpio.h:
 

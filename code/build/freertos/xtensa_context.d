@@ -13,7 +13,7 @@ xtensa_context.o: \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/config/system.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
@@ -47,7 +47,7 @@ xtensa_context.o: \
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

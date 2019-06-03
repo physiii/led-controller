@@ -15,7 +15,7 @@ heap_caps.o: /usr/local/src/esp/esp-idf/components/heap/heap_caps.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
@@ -118,7 +118,7 @@ heap_caps.o: /usr/local/src/esp/esp-idf/components/heap/heap_caps.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h:
 

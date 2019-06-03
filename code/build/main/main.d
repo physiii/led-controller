@@ -1,5 +1,5 @@
-main.o: /home/andy/circuits/liger/code/main/main.c \
- /home/andy/circuits/liger/code/build/libwebsockets/include/libwebsockets.h \
+main.o: /home/andy/devices/open-led/code/main/main.c \
+ /home/andy/devices/open-led/code/build/libwebsockets/include/libwebsockets.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
@@ -18,7 +18,7 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
- /home/andy/circuits/liger/code/build/libwebsockets/include/lws_config.h \
+ /home/andy/devices/open-led/code/build/libwebsockets/include/lws_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/unistd.h \
@@ -28,33 +28,33 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/types.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/time.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/pk.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/md.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/pk.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/time.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/time.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/time.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-logs.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-esp32.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-logs.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-esp32.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -156,47 +156,47 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
  /usr/local/src/esp/esp-idf/components/mdns/include/mdns.h \
  /usr/local/src/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  /usr/local/src/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ws-close.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-callbacks.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ws-state.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ws-ext.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-protocols-plugins.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-plugin-generic-sessions.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-context-vhost.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-client.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-http.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-spa.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-purify.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-timeout-timer.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-service.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-write.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-writeable.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-adopt.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-network-helper.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-misc.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ring.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-sha1-base64.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-x509.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-cgi.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-vfs.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-lejp.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-stats.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-threadpool.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha1.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-genhash.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-genrsa.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-jwk.h \
- /home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-jws.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ws-close.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-callbacks.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ws-state.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ws-ext.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-protocols-plugins.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-plugin-generic-sessions.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-context-vhost.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-client.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-http.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-spa.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-purify.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-timeout-timer.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-service.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-write.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-writeable.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-adopt.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-network-helper.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-misc.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ring.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-sha1-base64.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-x509.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-cgi.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-vfs.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-lejp.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-stats.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-threadpool.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha1.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-genhash.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-genrsa.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-jwk.h \
+ /home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-jws.h \
  /usr/local/src/esp/esp-idf/components/json/cJSON/cJSON.h \
- /home/andy/circuits/liger/code/main/../components/libwebsockets/plugins/protocol_lws_status.c \
- /home/andy/circuits/liger/code/components/libwebsockets/plugins/protocol_esp32_lws_reboot_to_factory.c \
+ /home/andy/devices/open-led/code/main/../components/libwebsockets/plugins/protocol_lws_status.c \
+ /home/andy/devices/open-led/code/components/libwebsockets/plugins/protocol_esp32_lws_reboot_to_factory.c \
  /usr/local/src/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
- /home/andy/circuits/liger/code/main/services/storage.c \
+ /home/andy/devices/open-led/code/main/services/storage.c \
  /usr/local/src/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /usr/local/src/esp/esp-idf/components/nvs_flash/include/nvs.h \
- /home/andy/circuits/liger/code/main/services/alarm.c \
+ /home/andy/devices/open-led/code/main/services/alarm.c \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/uart.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
@@ -211,8 +211,8 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/timer.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h \
- /home/andy/circuits/liger/code/main/services/microphone.c \
- /home/andy/circuits/liger/code/main/services/drivers/SPH0645LM4H.c \
+ /home/andy/devices/open-led/code/main/services/microphone.c \
+ /home/andy/devices/open-led/code/main/services/drivers/SPH0645LM4H.c \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log.h \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log_internal.h \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/i2s.h \
@@ -220,24 +220,24 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/adc.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h \
- /home/andy/circuits/liger/code/main/services/LED.c \
- /home/andy/circuits/liger/code/main/services/drivers/ws2812b.c \
+ /home/andy/devices/open-led/code/main/services/LED.c \
+ /home/andy/devices/open-led/code/main/services/drivers/ws2812b.c \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/rmt.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/rmt_reg.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/rmt_struct.h \
- /home/andy/circuits/liger/code/main/plugins/protocol_relay.c \
- /home/andy/circuits/liger/code/main/plugins/protocol_utility.c \
- /home/andy/circuits/liger/code/main/services/button.c \
- /home/andy/circuits/liger/code/main/services/drivers/touch.c \
+ /home/andy/devices/open-led/code/main/plugins/protocol_relay.c \
+ /home/andy/devices/open-led/code/main/plugins/protocol_utility.c \
+ /home/andy/devices/open-led/code/main/services/button.c \
+ /home/andy/devices/open-led/code/main/services/drivers/touch.c \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/sens_reg.h \
- /home/andy/circuits/liger/code/main/services/dimmer.c \
- /home/andy/circuits/liger/code/main/services/motion.c \
- /home/andy/circuits/liger/code/main/services/drivers/PYQ2898.c \
+ /home/andy/devices/open-led/code/main/services/dimmer.c \
+ /home/andy/devices/open-led/code/main/services/motion.c \
+ /home/andy/devices/open-led/code/main/services/drivers/PYQ2898.c \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
- /home/andy/circuits/liger/code/main/services/scheduler.c
+ /home/andy/devices/open-led/code/main/services/scheduler.c
 
-/home/andy/circuits/liger/code/build/libwebsockets/include/libwebsockets.h:
+/home/andy/devices/open-led/code/build/libwebsockets/include/libwebsockets.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/string.h:
 
@@ -275,7 +275,7 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h:
 
-/home/andy/circuits/liger/code/build/libwebsockets/include/lws_config.h:
+/home/andy/devices/open-led/code/build/libwebsockets/include/lws_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h:
 
@@ -295,49 +295,49 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/time.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/pk.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/pk.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/md.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/md.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/time.h:
 
@@ -345,9 +345,9 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/machine/time.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-logs.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-logs.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-esp32.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-esp32.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -551,87 +551,87 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ws-close.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ws-close.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-callbacks.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-callbacks.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ws-state.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ws-state.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ws-ext.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ws-ext.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-protocols-plugins.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-protocols-plugins.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-plugin-generic-sessions.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-plugin-generic-sessions.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-context-vhost.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-context-vhost.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-client.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-client.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-http.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-http.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-spa.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-spa.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-purify.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-purify.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-timeout-timer.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-timeout-timer.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-service.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-service.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-write.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-write.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-writeable.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-writeable.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-adopt.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-adopt.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-network-helper.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-network-helper.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-misc.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-misc.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-ring.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-ring.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-sha1-base64.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-sha1-base64.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-x509.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-x509.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-cgi.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-cgi.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-vfs.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-vfs.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-lejp.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-lejp.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-stats.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-stats.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-threadpool.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-threadpool.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha1.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha1.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-genhash.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-genhash.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-genrsa.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-genrsa.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-jwk.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-jwk.h:
 
-/home/andy/circuits/liger/code/components/libwebsockets/include/libwebsockets/lws-jws.h:
+/home/andy/devices/open-led/code/components/libwebsockets/include/libwebsockets/lws-jws.h:
 
 /usr/local/src/esp/esp-idf/components/json/cJSON/cJSON.h:
 
-/home/andy/circuits/liger/code/main/../components/libwebsockets/plugins/protocol_lws_status.c:
+/home/andy/devices/open-led/code/main/../components/libwebsockets/plugins/protocol_lws_status.c:
 
-/home/andy/circuits/liger/code/components/libwebsockets/plugins/protocol_esp32_lws_reboot_to_factory.c:
+/home/andy/devices/open-led/code/components/libwebsockets/plugins/protocol_esp32_lws_reboot_to_factory.c:
 
 /usr/local/src/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 
-/home/andy/circuits/liger/code/main/services/storage.c:
+/home/andy/devices/open-led/code/main/services/storage.c:
 
 /usr/local/src/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
 
 /usr/local/src/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
-/home/andy/circuits/liger/code/main/services/alarm.c:
+/home/andy/devices/open-led/code/main/services/alarm.c:
 
 /usr/local/src/esp/esp-idf/components/driver/include/driver/uart.h:
 
@@ -661,9 +661,9 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h:
 
-/home/andy/circuits/liger/code/main/services/microphone.c:
+/home/andy/devices/open-led/code/main/services/microphone.c:
 
-/home/andy/circuits/liger/code/main/services/drivers/SPH0645LM4H.c:
+/home/andy/devices/open-led/code/main/services/drivers/SPH0645LM4H.c:
 
 /usr/local/src/esp/esp-idf/components/log/include/esp_log.h:
 
@@ -679,9 +679,9 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h:
 
-/home/andy/circuits/liger/code/main/services/LED.c:
+/home/andy/devices/open-led/code/main/services/LED.c:
 
-/home/andy/circuits/liger/code/main/services/drivers/ws2812b.c:
+/home/andy/devices/open-led/code/main/services/drivers/ws2812b.c:
 
 /usr/local/src/esp/esp-idf/components/driver/include/driver/rmt.h:
 
@@ -689,25 +689,25 @@ main.o: /home/andy/circuits/liger/code/main/main.c \
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/rmt_struct.h:
 
-/home/andy/circuits/liger/code/main/plugins/protocol_relay.c:
+/home/andy/devices/open-led/code/main/plugins/protocol_relay.c:
 
-/home/andy/circuits/liger/code/main/plugins/protocol_utility.c:
+/home/andy/devices/open-led/code/main/plugins/protocol_utility.c:
 
-/home/andy/circuits/liger/code/main/services/button.c:
+/home/andy/devices/open-led/code/main/services/button.c:
 
-/home/andy/circuits/liger/code/main/services/drivers/touch.c:
+/home/andy/devices/open-led/code/main/services/drivers/touch.c:
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/sens_reg.h:
 
-/home/andy/circuits/liger/code/main/services/dimmer.c:
+/home/andy/devices/open-led/code/main/services/dimmer.c:
 
-/home/andy/circuits/liger/code/main/services/motion.c:
+/home/andy/devices/open-led/code/main/services/motion.c:
 
-/home/andy/circuits/liger/code/main/services/drivers/PYQ2898.c:
+/home/andy/devices/open-led/code/main/services/drivers/PYQ2898.c:
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 
-/home/andy/circuits/liger/code/main/services/scheduler.c:
-/home/andy/circuits/liger/code/main/./main.c:
+/home/andy/devices/open-led/code/main/services/scheduler.c:
+/home/andy/devices/open-led/code/main/./main.c:

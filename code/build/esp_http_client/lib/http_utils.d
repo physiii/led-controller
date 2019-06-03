@@ -25,7 +25,7 @@ lib/http_utils.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/time.h
@@ -80,7 +80,7 @@ lib/http_utils.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

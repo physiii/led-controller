@@ -1,5 +1,5 @@
 int_wdt.o: /usr/local/src/esp/esp-idf/components/esp32/int_wdt.c \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/features.h \
@@ -90,7 +90,7 @@ int_wdt.o: /usr/local/src/esp/esp-idf/components/esp32/int_wdt.c \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_int_wdt.h
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h:
 

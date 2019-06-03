@@ -1,5 +1,5 @@
 termios.o: /usr/local/src/esp/esp-idf/components/newlib/termios.c \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -19,7 +19,7 @@ termios.o: /usr/local/src/esp/esp-idf/components/newlib/termios.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/errno.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/reent.h
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 

@@ -24,7 +24,7 @@ task_wdt.o: /usr/local/src/esp/esp-idf/components/esp32/task_wdt.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/hal.h \
@@ -149,7 +149,7 @@ task_wdt.o: /usr/local/src/esp/esp-idf/components/esp32/task_wdt.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

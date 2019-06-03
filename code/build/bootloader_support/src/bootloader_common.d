@@ -1,7 +1,7 @@
 src/bootloader_common.o: \
  /usr/local/src/esp/esp-idf/components/bootloader_support/src/bootloader_common.c \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -57,7 +57,7 @@ src/bootloader_common.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h:
 

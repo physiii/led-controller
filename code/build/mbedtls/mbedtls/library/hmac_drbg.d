@@ -1,12 +1,12 @@
 mbedtls/library/hmac_drbg.o: \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/library/hmac_drbg.c \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/library/hmac_drbg.c \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/md.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/config.h \
@@ -26,8 +26,8 @@ mbedtls/library/hmac_drbg.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/types.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/time.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/time.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/time.h \
@@ -35,19 +35,19 @@ mbedtls/library/hmac_drbg.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/md.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/md.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/string.h:
 
@@ -87,9 +87,9 @@ mbedtls/library/hmac_drbg.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/time.h:
 
@@ -102,4 +102,4 @@ mbedtls/library/hmac_drbg.o: \
 /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h:
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/library/hmac_drbg.c:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/library/hmac_drbg.c:

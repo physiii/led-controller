@@ -34,7 +34,7 @@ lwip/src/core/ipv6/ip6_frag.o: \
  /usr/local/src/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/sys/select.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_task.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_system.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -200,7 +200,7 @@ lwip/src/core/ipv6/ip6_frag.o: \
 
 /usr/local/src/esp/esp-idf/components/esp32/include/esp_task.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/esp_system.h:
 

@@ -1,6 +1,6 @@
-uncompr.o: /home/andy/circuits/liger/code/components/zlib/uncompr.c \
- /home/andy/circuits/liger/code/components/zlib/zlib.h \
- /home/andy/circuits/liger/code/components/zlib/zconf.h \
+uncompr.o: /home/andy/devices/open-led/code/components/zlib/uncompr.c \
+ /home/andy/devices/open-led/code/components/zlib/zlib.h \
+ /home/andy/devices/open-led/code/components/zlib/zconf.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/types.h \
@@ -20,9 +20,9 @@ uncompr.o: /home/andy/circuits/liger/code/components/zlib/uncompr.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/unistd.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h
 
-/home/andy/circuits/liger/code/components/zlib/zlib.h:
+/home/andy/devices/open-led/code/components/zlib/zlib.h:
 
-/home/andy/circuits/liger/code/components/zlib/zconf.h:
+/home/andy/devices/open-led/code/components/zlib/zconf.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
@@ -59,4 +59,4 @@ uncompr.o: /home/andy/circuits/liger/code/components/zlib/uncompr.c \
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/unistd.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h:
-/home/andy/circuits/liger/code/components/zlib/./uncompr.c:
+/home/andy/devices/open-led/code/components/zlib/./uncompr.c:

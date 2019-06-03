@@ -1,5 +1,5 @@
-gzlib.o: /home/andy/circuits/liger/code/components/zlib/gzlib.c \
- /home/andy/circuits/liger/code/components/zlib/gzguts.h \
+gzlib.o: /home/andy/devices/open-led/code/components/zlib/gzlib.c \
+ /home/andy/devices/open-led/code/components/zlib/gzguts.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
@@ -18,8 +18,8 @@ gzlib.o: /home/andy/circuits/liger/code/components/zlib/gzlib.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/types.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /home/andy/circuits/liger/code/components/zlib/zlib.h \
- /home/andy/circuits/liger/code/components/zlib/zconf.h \
+ /home/andy/devices/open-led/code/components/zlib/zlib.h \
+ /home/andy/devices/open-led/code/components/zlib/zconf.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/unistd.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
@@ -40,7 +40,7 @@ gzlib.o: /home/andy/circuits/liger/code/components/zlib/gzlib.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/errno.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/errno.h
 
-/home/andy/circuits/liger/code/components/zlib/gzguts.h:
+/home/andy/devices/open-led/code/components/zlib/gzguts.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -78,9 +78,9 @@ gzlib.o: /home/andy/circuits/liger/code/components/zlib/gzlib.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
-/home/andy/circuits/liger/code/components/zlib/zlib.h:
+/home/andy/devices/open-led/code/components/zlib/zlib.h:
 
-/home/andy/circuits/liger/code/components/zlib/zconf.h:
+/home/andy/devices/open-led/code/components/zlib/zconf.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
@@ -119,4 +119,4 @@ gzlib.o: /home/andy/circuits/liger/code/components/zlib/gzlib.c \
 /usr/local/src/esp/esp-idf/components/newlib/include/errno.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/errno.h:
-/home/andy/circuits/liger/code/components/zlib/./gzlib.c:
+/home/andy/devices/open-led/code/components/zlib/./gzlib.c:

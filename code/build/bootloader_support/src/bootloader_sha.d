@@ -26,7 +26,7 @@ src/bootloader_sha.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/sched.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h \
@@ -34,9 +34,9 @@ src/bootloader_sha.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/endian.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/param.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h
 
 /usr/local/src/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_sha.h:
@@ -91,7 +91,7 @@ src/bootloader_sha.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 
@@ -107,11 +107,11 @@ src/bootloader_sha.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 /usr/local/src/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c:

@@ -10,7 +10,7 @@ src/ff.o: /usr/local/src/esp/esp-idf/components/fatfs/src/ff.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/endian.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/param.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/reent.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -112,7 +112,7 @@ src/ff.o: /usr/local/src/esp/esp-idf/components/fatfs/src/ff.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

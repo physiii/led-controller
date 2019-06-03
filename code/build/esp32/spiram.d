@@ -20,7 +20,7 @@ spiram.o: /usr/local/src/esp/esp-idf/components/esp32/spiram.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/endian.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/param.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_attr.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h \
@@ -136,7 +136,7 @@ spiram.o: /usr/local/src/esp/esp-idf/components/esp32/spiram.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/esp_attr.h:
 

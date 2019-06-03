@@ -10,9 +10,9 @@
 #include "driver/rmt.h"
 
 // Number of lights message sender expects
-#define VIRTUAL_LIGHT_COUNT (240)
+#define VIRTUAL_LIGHT_COUNT (256)
 // Physical length of LED strip
-#define REAL_LIGHT_COUNT (240)
+#define REAL_LIGHT_COUNT (256)
 #define RMT_TX_CHANNEL RMT_CHANNEL_0
 #define RMT_TX_GPIO 18
 

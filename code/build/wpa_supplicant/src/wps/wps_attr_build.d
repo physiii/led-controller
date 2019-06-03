@@ -31,7 +31,7 @@ src/wps/wps_attr_build.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -141,7 +141,7 @@ src/wps/wps_attr_build.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

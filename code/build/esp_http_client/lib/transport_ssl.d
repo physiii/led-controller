@@ -22,7 +22,7 @@ lib/transport_ssl.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -120,37 +120,37 @@ lib/transport_ssl.o: \
  /usr/local/src/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /usr/local/src/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/fcntl.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/pk.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/md.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_debug.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/aes.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/aes_alt.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/pk.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_debug.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/aes.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/aes_alt.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/hwcrypto/aes.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/aes.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/error.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/certs.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/error.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/certs.h \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log.h \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log_internal.h \
  /usr/local/src/esp/esp-idf/components/esp_http_client/lib/include/transport.h \
@@ -202,7 +202,7 @@ lib/transport_ssl.o: \
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -398,67 +398,67 @@ lib/transport_ssl.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/fcntl.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/pk.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/pk.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/md.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/md.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/rsa.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/dhm.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_debug.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_debug.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/entropy.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/entropy.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/aes.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/aes.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/aes_alt.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/aes_alt.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/hwcrypto/aes.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/rom/aes.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/error.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/error.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/certs.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/certs.h:
 
 /usr/local/src/esp/esp-idf/components/log/include/esp_log.h:
 

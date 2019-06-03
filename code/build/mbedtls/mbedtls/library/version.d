@@ -1,11 +1,11 @@
 mbedtls/library/version.o: \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/library/version.c \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/library/version.c \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/version.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/version.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/config.h \
@@ -21,17 +21,17 @@ mbedtls/library/version.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/version.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/version.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/string.h:
 
@@ -60,4 +60,4 @@ mbedtls/library/version.o: \
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h:
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/library/version.c:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/library/version.c:

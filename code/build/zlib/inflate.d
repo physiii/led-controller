@@ -1,7 +1,7 @@
-inflate.o: /home/andy/circuits/liger/code/components/zlib/inflate.c \
- /home/andy/circuits/liger/code/components/zlib/zutil.h \
- /home/andy/circuits/liger/code/components/zlib/zlib.h \
- /home/andy/circuits/liger/code/components/zlib/zconf.h \
+inflate.o: /home/andy/devices/open-led/code/components/zlib/inflate.c \
+ /home/andy/devices/open-led/code/components/zlib/zutil.h \
+ /home/andy/devices/open-led/code/components/zlib/zlib.h \
+ /home/andy/devices/open-led/code/components/zlib/zconf.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/types.h \
@@ -27,16 +27,16 @@ inflate.o: /home/andy/circuits/liger/code/components/zlib/inflate.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
- /home/andy/circuits/liger/code/components/zlib/inftrees.h \
- /home/andy/circuits/liger/code/components/zlib/inflate.h \
- /home/andy/circuits/liger/code/components/zlib/inffast.h \
- /home/andy/circuits/liger/code/components/zlib/inffixed.h
+ /home/andy/devices/open-led/code/components/zlib/inftrees.h \
+ /home/andy/devices/open-led/code/components/zlib/inflate.h \
+ /home/andy/devices/open-led/code/components/zlib/inffast.h \
+ /home/andy/devices/open-led/code/components/zlib/inffixed.h
 
-/home/andy/circuits/liger/code/components/zlib/zutil.h:
+/home/andy/devices/open-led/code/components/zlib/zutil.h:
 
-/home/andy/circuits/liger/code/components/zlib/zlib.h:
+/home/andy/devices/open-led/code/components/zlib/zlib.h:
 
-/home/andy/circuits/liger/code/components/zlib/zconf.h:
+/home/andy/devices/open-led/code/components/zlib/zconf.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
@@ -88,11 +88,11 @@ inflate.o: /home/andy/circuits/liger/code/components/zlib/inflate.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h:
 
-/home/andy/circuits/liger/code/components/zlib/inftrees.h:
+/home/andy/devices/open-led/code/components/zlib/inftrees.h:
 
-/home/andy/circuits/liger/code/components/zlib/inflate.h:
+/home/andy/devices/open-led/code/components/zlib/inflate.h:
 
-/home/andy/circuits/liger/code/components/zlib/inffast.h:
+/home/andy/devices/open-led/code/components/zlib/inffast.h:
 
-/home/andy/circuits/liger/code/components/zlib/inffixed.h:
-/home/andy/circuits/liger/code/components/zlib/./inflate.c:
+/home/andy/devices/open-led/code/components/zlib/inffixed.h:
+/home/andy/devices/open-led/code/components/zlib/./inflate.c:

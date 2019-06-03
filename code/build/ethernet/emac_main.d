@@ -28,7 +28,7 @@ emac_main.o: /usr/local/src/esp/esp-idf/components/ethernet/emac_main.c \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/gpio.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_attr.h \
@@ -201,7 +201,7 @@ emac_main.o: /usr/local/src/esp/esp-idf/components/ethernet/emac_main.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

@@ -30,7 +30,7 @@ src/fast_crypto/fast_crypto_internal-cipher.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/circuits/liger/code/build/include/sdkconfig.h \
+ /home/andy/devices/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -39,11 +39,11 @@ src/fast_crypto/fast_crypto_internal-cipher.o: \
  /usr/local/src/esp/esp-idf/components/wpa_supplicant/include/crypto/crypto.h \
  /usr/local/src/esp/esp-idf/components/wpa_supplicant/include/crypto/common.h \
  /usr/local/src/esp/esp-idf/components/wpa_supplicant/include/crypto/aes.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/aes.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/aes.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
- /home/andy/circuits/liger/code/components/mbedtls/port/include/aes_alt.h \
+ /home/andy/devices/open-led/code/components/mbedtls/port/include/aes_alt.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/hwcrypto/aes.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/aes.h
 
@@ -107,7 +107,7 @@ src/fast_crypto/fast_crypto_internal-cipher.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/circuits/liger/code/build/include/sdkconfig.h:
+/home/andy/devices/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 
@@ -125,15 +125,15 @@ src/fast_crypto/fast_crypto_internal-cipher.o: \
 
 /usr/local/src/esp/esp-idf/components/wpa_supplicant/include/crypto/aes.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/aes.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/aes.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
-/home/andy/circuits/liger/code/components/mbedtls/port/include/aes_alt.h:
+/home/andy/devices/open-led/code/components/mbedtls/port/include/aes_alt.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/hwcrypto/aes.h:
 
