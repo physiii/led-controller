@@ -37,7 +37,7 @@ nghttp2/lib/nghttp2_frame.o: \
  /usr/local/src/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h \
  /usr/local/src/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_rcbuf.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/errno.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/errno.h \
@@ -121,7 +121,7 @@ nghttp2/lib/nghttp2_frame.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

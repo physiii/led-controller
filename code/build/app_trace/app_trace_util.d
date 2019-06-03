@@ -15,7 +15,7 @@ app_trace_util.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -112,7 +112,7 @@ app_trace_util.o: \
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

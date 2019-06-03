@@ -1,8 +1,8 @@
-trees.o: /home/andy/devices/open-led/code/components/zlib/trees.c \
- /home/andy/devices/open-led/code/components/zlib/deflate.h \
- /home/andy/devices/open-led/code/components/zlib/zutil.h \
- /home/andy/devices/open-led/code/components/zlib/zlib.h \
- /home/andy/devices/open-led/code/components/zlib/zconf.h \
+trees.o: /home/andy/circuits/open-led/code/components/zlib/trees.c \
+ /home/andy/circuits/open-led/code/components/zlib/deflate.h \
+ /home/andy/circuits/open-led/code/components/zlib/zutil.h \
+ /home/andy/circuits/open-led/code/components/zlib/zlib.h \
+ /home/andy/circuits/open-led/code/components/zlib/zconf.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/types.h \
@@ -28,15 +28,15 @@ trees.o: /home/andy/devices/open-led/code/components/zlib/trees.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
- /home/andy/devices/open-led/code/components/zlib/trees.h
+ /home/andy/circuits/open-led/code/components/zlib/trees.h
 
-/home/andy/devices/open-led/code/components/zlib/deflate.h:
+/home/andy/circuits/open-led/code/components/zlib/deflate.h:
 
-/home/andy/devices/open-led/code/components/zlib/zutil.h:
+/home/andy/circuits/open-led/code/components/zlib/zutil.h:
 
-/home/andy/devices/open-led/code/components/zlib/zlib.h:
+/home/andy/circuits/open-led/code/components/zlib/zlib.h:
 
-/home/andy/devices/open-led/code/components/zlib/zconf.h:
+/home/andy/circuits/open-led/code/components/zlib/zconf.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
@@ -88,5 +88,5 @@ trees.o: /home/andy/devices/open-led/code/components/zlib/trees.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h:
 
-/home/andy/devices/open-led/code/components/zlib/trees.h:
-/home/andy/devices/open-led/code/components/zlib/./trees.c:
+/home/andy/circuits/open-led/code/components/zlib/trees.h:
+/home/andy/circuits/open-led/code/components/zlib/./trees.c:

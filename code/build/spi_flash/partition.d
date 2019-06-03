@@ -16,7 +16,7 @@ partition.o: /usr/local/src/esp/esp-idf/components/spi_flash/partition.c \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h \
@@ -79,7 +79,7 @@ partition.o: /usr/local/src/esp/esp-idf/components/spi_flash/partition.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

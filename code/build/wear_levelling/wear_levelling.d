@@ -20,7 +20,7 @@ wear_levelling.o: \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/_intsup.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -89,7 +89,7 @@ wear_levelling.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/_intsup.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

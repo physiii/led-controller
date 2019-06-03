@@ -3,7 +3,7 @@ asio/asio/src/asio.o: \
  /usr/local/src/esp/esp-idf/components/asio/asio/asio/include/asio/impl/src.hpp \
  /usr/local/src/esp/esp-idf/components/asio/asio/asio/include/asio/detail/config.hpp \
  /usr/local/src/esp/esp-idf/components/asio/port/include/esp_asio_config.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp \
  /usr/local/src/esp/esp-idf/components/asio/asio/asio/include/asio/error.hpp \
  /usr/local/src/esp/esp-idf/components/asio/asio/asio/include/asio/error_code.hpp \
@@ -325,7 +325,7 @@ asio/asio/src/asio.o: \
 
 /usr/local/src/esp/esp-idf/components/asio/port/include/esp_asio_config.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp:
 

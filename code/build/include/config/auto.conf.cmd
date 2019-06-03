@@ -12,10 +12,10 @@ deps_config := \
 	/usr/local/src/esp/esp-idf/components/heap/Kconfig \
 	/usr/local/src/esp/esp-idf/components/http_server/Kconfig \
 	/usr/local/src/esp/esp-idf/components/libsodium/Kconfig \
-	/home/andy/devices/open-led/code/components/libwebsockets/Kconfig \
+	/home/andy/circuits/open-led/code/components/libwebsockets/Kconfig \
 	/usr/local/src/esp/esp-idf/components/log/Kconfig \
 	/usr/local/src/esp/esp-idf/components/lwip/Kconfig \
-	/home/andy/devices/open-led/code/components/mbedtls/Kconfig \
+	/home/andy/circuits/open-led/code/components/mbedtls/Kconfig \
 	/usr/local/src/esp/esp-idf/components/mdns/Kconfig \
 	/usr/local/src/esp/esp-idf/components/openssl/Kconfig \
 	/usr/local/src/esp/esp-idf/components/pthread/Kconfig \

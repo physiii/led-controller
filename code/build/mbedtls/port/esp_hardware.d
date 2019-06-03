@@ -1,8 +1,8 @@
 port/esp_hardware.o: \
- /home/andy/devices/open-led/code/components/mbedtls/port/esp_hardware.c \
- /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/port/esp_hardware.c \
+ /home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/types.h \
@@ -26,11 +26,11 @@ port/esp_hardware.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h
 
-/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
@@ -75,4 +75,4 @@ port/esp_hardware.o: \
 /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h:
-/home/andy/devices/open-led/code/components/mbedtls/port/esp_hardware.c:
+/home/andy/circuits/open-led/code/components/mbedtls/port/esp_hardware.c:

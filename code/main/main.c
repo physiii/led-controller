@@ -52,15 +52,16 @@ void debounce_pir();
 static int ratelimit_connects(unsigned int *last, unsigned int secs);
 
 #include "services/storage.c"
-#include "services/alarm.c"
-#include "services/microphone.c"
+// #include "services/alarm.c"
+// #include "services/microphone.c"
+#include "services/rotary_encoder.c"
 #include "services/LED.c"
 #include "plugins/protocol_relay.c"
 #include "plugins/protocol_utility.c"
-#include "services/button.c"
-#include "services/dimmer.c"
-#include "services/motion.c"
-#include "services/scheduler.c"
+// #include "services/button.c"
+// #include "services/dimmer.c"
+// #include "services/motion.c"
+// #include "services/scheduler.c"
 
 static const struct lws_protocols protocols_station[] = {
 	{
@@ -194,7 +195,7 @@ int load_device_id() {
 	}
 
 	while (strcmp(device_id,"")==0) {
-		printf("utility loop (%d)\n",cnt++);
+		// printf("utility loop (%d)\n",cnt++);
 
 		if (got_ip && ratelimit_connects(&rl_device_id, 5u)) {
 			snprintf(utility_data_out,sizeof(utility_data_out),"{\"event_type\":\"generate-uuid\"}");
@@ -233,13 +234,14 @@ void app_main(void) {
 	lws_esp32_wlan_start_station();
 	context = lws_esp32_init(&info, &vh);
 
-	alarm_main();
-	buttons_main();
+	// alarm_main();
+	// buttons_main();
+	rotary_encoder_main();
 	LED_main();
-	dimmer_main();
-	schedule_main();
-	motion_main();
-	microphone_main();
+	// dimmer_main();
+	// schedule_main();
+	// motion_main();
+	// microphone_main();
 
 	// store_char("token","");
 	// store_char("device_id","");
@@ -307,17 +309,17 @@ void app_main(void) {
 			setLED(0, 0, 255);
 		}
 
-		if (buttons_service_message_ready && !wss_data_out_ready) {
-			strcpy(wss_data_out,buttons_service_message);
-			buttons_service_message_ready = false;
-			wss_data_out_ready = true;
-		}
-
-		if (alarm_service_message_ready && !wss_data_out_ready) {
-			strcpy(wss_data_out,alarm_service_message);
-			alarm_service_message_ready = false;
-			wss_data_out_ready = true;
-		}
+		// if (buttons_service_message_ready && !wss_data_out_ready) {
+		// 	strcpy(wss_data_out,buttons_service_message);
+		// 	buttons_service_message_ready = false;
+		// 	wss_data_out_ready = true;
+		// }
+		//
+		// if (alarm_service_message_ready && !wss_data_out_ready) {
+		// 	strcpy(wss_data_out,alarm_service_message);
+		// 	alarm_service_message_ready = false;
+		// 	wss_data_out_ready = true;
+		// }
 
 		if (got_ip
 			&& relay_status == CONNECTED

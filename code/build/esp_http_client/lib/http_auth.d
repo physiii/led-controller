@@ -31,7 +31,7 @@ lib/http_auth.o: \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/queue.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_interface.h \
  /usr/local/src/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
@@ -124,7 +124,7 @@ lib/http_auth.o: \
  /usr/local/src/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /usr/local/src/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/rom/md5_hash.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/base64.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/base64.h \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log.h \
  /usr/local/src/esp/esp-idf/components/log/include/esp_log_internal.h \
  /usr/local/src/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
@@ -192,7 +192,7 @@ lib/http_auth.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 
@@ -378,7 +378,7 @@ lib/http_auth.o: \
 
 /usr/local/src/esp/esp-idf/components/esp32/include/rom/md5_hash.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/base64.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/base64.h:
 
 /usr/local/src/esp/esp-idf/components/log/include/esp_log.h:
 

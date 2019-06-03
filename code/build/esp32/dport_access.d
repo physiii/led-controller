@@ -17,7 +17,7 @@ dport_access.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/lock.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_attr.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdio.h \
@@ -130,7 +130,7 @@ dport_access.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/esp32/include/esp_attr.h:
 

@@ -23,7 +23,7 @@ tasks.o: /usr/local/src/esp/esp-idf/components/freertos/tasks.c \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/esp_newlib.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_panic.h \
@@ -141,7 +141,7 @@ tasks.o: /usr/local/src/esp/esp-idf/components/freertos/tasks.c \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/assert.h:
 

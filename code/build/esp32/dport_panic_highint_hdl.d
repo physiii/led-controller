@@ -14,7 +14,7 @@ dport_panic_highint_hdl.o: \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_panic.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h
@@ -47,7 +47,7 @@ dport_panic_highint_hdl.o: \
 
 /usr/local/src/esp/esp-idf/components/esp32/include/esp_panic.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

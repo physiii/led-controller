@@ -24,7 +24,7 @@ select.o: /usr/local/src/esp/esp-idf/components/newlib/select.c \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/reent.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -143,7 +143,7 @@ select.o: /usr/local/src/esp/esp-idf/components/newlib/select.c \
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

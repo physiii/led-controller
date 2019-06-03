@@ -48,8 +48,8 @@ add_library(websockets STATIC IMPORTED)
 set_property(TARGET websockets APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(websockets PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "/home/andy/devices/open-led/code/build/zlib/libzlib.a;m"
-  IMPORTED_LOCATION_RELEASE "/home/andy/devices/open-led/code/build/libwebsockets/lib/libwebsockets.a"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "/home/andy/circuits/open-led/code/build/zlib/libzlib.a;m"
+  IMPORTED_LOCATION_RELEASE "/home/andy/circuits/open-led/code/build/libwebsockets/lib/libwebsockets.a"
   )
 
 # This file does not depend on other imported targets which have

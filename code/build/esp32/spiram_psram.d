@@ -1,6 +1,6 @@
 spiram_psram.o: \
  /usr/local/src/esp/esp-idf/components/esp32/spiram_psram.c \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
@@ -76,7 +76,7 @@ spiram_psram.o: \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /usr/local/src/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/string.h:
 

@@ -1,13 +1,13 @@
 mbedtls/library/ecdh.o: \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/library/ecdh.c \
- /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/library/ecdh.c \
+ /home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/features.h \
@@ -30,21 +30,21 @@ mbedtls/library/ecdh.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h
 
-/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/newlib.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecdh.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdint.h:
 
@@ -87,4 +87,4 @@ mbedtls/library/ecdh.o: \
 /usr/local/src/esp/esp-idf/components/newlib/include/string.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h:
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/library/ecdh.c:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/library/ecdh.c:

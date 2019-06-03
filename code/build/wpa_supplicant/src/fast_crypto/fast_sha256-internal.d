@@ -9,7 +9,7 @@ src/fast_crypto/fast_sha256-internal.o: \
  /usr/local/src/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_assert.h \
  /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -37,9 +37,9 @@ src/fast_crypto/fast_sha256-internal.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_err.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/endian.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
- /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h
 
 /usr/local/src/esp/esp-idf/components/wpa_supplicant/include/crypto/includes.h:
@@ -60,7 +60,7 @@ src/fast_crypto/fast_sha256-internal.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -116,11 +116,11 @@ src/fast_crypto/fast_sha256-internal.o: \
 
 /usr/local/src/esp/esp-idf/components/newlib/include/machine/endian.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 /usr/local/src/esp/esp-idf/components/wpa_supplicant/src/fast_crypto/fast_sha256-internal.c:

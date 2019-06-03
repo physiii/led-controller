@@ -9,7 +9,7 @@ library/ssl_pkey.o: \
  /usr/local/src/esp/esp-idf/components/openssl/include/internal/ssl_methods.h \
  /usr/local/src/esp/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /usr/local/src/esp/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
  /usr/local/src/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  /usr/local/src/esp/esp-idf/components/esp32/include/esp_types.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -61,7 +61,7 @@ library/ssl_pkey.o: \
 
 /usr/local/src/esp/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
 /usr/local/src/esp/esp-idf/components/openssl/include/platform/ssl_port.h:
 

@@ -7,7 +7,7 @@
 get_filename_component(LWS_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 
 # Set the include directories.
-set(LIBWEBSOCKETS_INCLUDE_DIRS "/home/andy/devices/open-led/code/components/libwebsockets/lib;/home/andy/devices/open-led/code/build/libwebsockets")
+set(LIBWEBSOCKETS_INCLUDE_DIRS "/home/andy/circuits/open-led/code/components/libwebsockets/lib;/home/andy/circuits/open-led/code/build/libwebsockets")
 
 # Include the project Targets file, this contains definitions for IMPORTED targets.
 include(${LWS_CMAKE_DIR}/LibwebsocketsTargets.cmake)

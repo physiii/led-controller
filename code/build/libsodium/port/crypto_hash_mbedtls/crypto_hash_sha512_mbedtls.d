@@ -20,10 +20,10 @@ port/crypto_hash_mbedtls/crypto_hash_sha512_mbedtls.o: \
  /usr/local/src/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/alloca.h \
  /usr/local/src/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
- /home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/andy/devices/open-led/code/build/include/sdkconfig.h \
- /home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/andy/circuits/open-led/code/build/include/sdkconfig.h \
+ /home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/limits.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/string.h \
  /usr/local/src/esp/esp-idf/components/newlib/include/sys/string.h
@@ -68,13 +68,13 @@ port/crypto_hash_mbedtls/crypto_hash_sha512_mbedtls.o: \
 
 /usr/local/src/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/andy/devices/open-led/code/build/include/sdkconfig.h:
+/home/andy/circuits/open-led/code/build/include/sdkconfig.h:
 
-/home/andy/devices/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/home/andy/circuits/open-led/code/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /usr/local/src/esp/esp-idf/components/newlib/include/limits.h:
 
