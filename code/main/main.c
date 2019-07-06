@@ -48,14 +48,16 @@ bool got_ip = false;
 //needs to go in headers
 int set_switch(int);
 int set_brightness(int);
+int incBrightness(int);
+int decBrightness(int);
 void debounce_pir();
 static int ratelimit_connects(unsigned int *last, unsigned int secs);
 
 #include "services/storage.c"
 // #include "services/alarm.c"
 // #include "services/microphone.c"
-#include "services/rotary_encoder.c"
 #include "services/LED.c"
+#include "services/rotary_encoder.c"
 #include "plugins/protocol_relay.c"
 #include "plugins/protocol_utility.c"
 // #include "services/button.c"
@@ -283,18 +285,6 @@ void app_main(void) {
 	"{\"type\":\"LED\","
 	"\"state\":{\"rgb\":[0,0,0]},"
 	"\"id\":\"rgb_1\"}"
-	",{\"type\":\"button\","
-	"\"state\":{\"value\":1},"
-	"\"id\":\"button_1\"}"
-	",{\"type\":\"alarm\","
-	"\"state\":{\"value\":1},"
-	"\"id\":\"alarm_1\"}"
-	",{\"type\":\"microphone\","
-	"\"state\":{\"sensitivity\":1},"
-	"\"id\":\"microphone_1\"}"
-	",{\"type\":\"motion\","
-	"\"state\":{\"sensitivity\":1},"
-	"\"id\":\"motion_1\"}"
 	"]}}");
 
 	strcpy(wss_data_out,load_message);
@@ -303,11 +293,11 @@ void app_main(void) {
 
 	while (1) {
 		// This should be non-blocking
-		if (relay_status == DISCONNECTED) {
-			setLED(0, 0, 0);
-			vTaskDelay(300 / portTICK_RATE_MS);
-			setLED(0, 0, 255);
-		}
+		// if (relay_status == DISCONNECTED) {
+		// 	setLED(0, 0, 0);
+		// 	vTaskDelay(300 / portTICK_RATE_MS);
+		// 	setLED(0, 0, 255);
+		// }
 
 		// if (buttons_service_message_ready && !wss_data_out_ready) {
 		// 	strcpy(wss_data_out,buttons_service_message);
@@ -321,23 +311,23 @@ void app_main(void) {
 		// 	wss_data_out_ready = true;
 		// }
 
-		if (got_ip
-			&& relay_status == CONNECTED
-			&& ratelimit_connects(&rl_ping, 60u)
-			&& strcmp(wss_data_out,"")==0) {
-				snprintf(wss_data_out,sizeof(wss_data_out),"{\"event_type\":\"ping\"}");
-				wss_data_out_ready = true;
-		}
+		// if (got_ip
+		// 	&& relay_status == CONNECTED
+		// 	&& ratelimit_connects(&rl_ping, 60u)
+		// 	&& strcmp(wss_data_out,"")==0) {
+		// 		snprintf(wss_data_out,sizeof(wss_data_out),"{\"event_type\":\"ping\"}");
+		// 		wss_data_out_ready = true;
+		// }
+		//
+		// if (got_ip && relay_status == DISCONNECTED && ratelimit_connects(&rl_token, 4u)) {
+		// 	relay_status = CONNECTING;
+		// 	lws_client_connect_via_info(&relay);
+		// 	printf("connecting to %s\n",server_address);
+		// }
 
-		if (got_ip && relay_status == DISCONNECTED && ratelimit_connects(&rl_token, 4u)) {
-			relay_status = CONNECTING;
-			lws_client_connect_via_info(&relay);
-			printf("connecting to %s\n",server_address);
-		}
-
-		if (got_ip && relay_status != DISCONNECTED) {
-				lws_service(context, 1000);
-		}
+		// if (got_ip && relay_status != DISCONNECTED) {
+		// 		lws_service(context, 1000);
+		// }
 
 		vTaskDelay(1000 / portTICK_RATE_MS);
 	}
