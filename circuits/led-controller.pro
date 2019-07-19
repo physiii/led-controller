@@ -1,4 +1,4 @@
-update=Fri 05 Jul 2019 10:07:05 AM CDT
+update=Wed 17 Jul 2019 08:13:40 AM CDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -22,7 +22,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=liger.net
+LastNetListRead=
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
