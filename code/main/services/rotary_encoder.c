@@ -10,6 +10,12 @@
 #define CCW   1
 #define ESP_INTR_FLAG_DEFAULT 0
 
+int debounce_count = 0;
+int hold_thresh = 10;
+int hold_cnt = 0;
+bool start_hold_cnt = false;
+bool select_mode_enabled = false;
+
 static xQueueHandle gpio_evt_queue = NULL;
 
 struct rotary_encoder {
@@ -28,7 +34,6 @@ struct rotary_encoder {
 };
 
 struct rotary_encoder rcA;
-struct rotary_encoder rcB;
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
@@ -36,12 +41,47 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
     xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL);
 }
 
+void reset_hold_count() {
+  hold_cnt = 0;
+}
+
+void toggle_hold_count() {
+  if (start_hold_cnt) {
+    printf("double click delay: %d\n", hold_cnt);
+  } else {
+    hold_cnt = 0;
+  }
+
+  start_hold_cnt = !start_hold_cnt;
+}
+
+void start_hold_count()
+{
+  start_hold_cnt = true;
+}
+
+void stop_hold_count()
+{
+  start_hold_cnt = false;
+}
+
+int get_click_delay()
+{
+  int ret = hold_cnt;
+  hold_cnt = 0;
+  return ret;
+}
+
+void enter_scene_select_mode(bool mode)
+{
+  select_mode_enabled = mode;
+  printf("Scene select mode. %d\n", select_mode_enabled);
+}
 
 static void rotary_encoder_task(void* arg)
 {
     uint32_t io_num;
-    struct timeval tv;
-
+    int cnt = 0;
     for(;;) {
         if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
             // printf("GPIO[%d] intr, val: %d\n", io_num, gpio_get_level(io_num));
@@ -49,16 +89,21 @@ static void rotary_encoder_task(void* arg)
 
             // Event from Encoder A
             if (io_num == rcA.SW_IO) {
-              rcA.pressed = gpio_get_level(rcA.SW_IO);
-              if (rcA.pressed) continue;
-              gettimeofday(&tv, NULL);
-              if (tv.tv_sec - rcA.debounce > 0) {
+              rcA.pressed = !gpio_get_level(rcA.SW_IO);
+              if (!rcA.pressed) continue;
+              if (debounce_count - rcA.debounce > 0) {
                 LED_payload = cJSON_CreateObject();
                 level_json = cJSON_CreateBool(true);
                 cJSON_AddItemToObject(LED_payload, "toggle", level_json);
-                printf("Rotary A: Toggle\n");
+                int delay = get_click_delay();
+                printf("Toggle (%d)\n", delay);
+                if (delay < 5) {
+                  enter_scene_select_mode(true);
+                } else {
+                  enter_scene_select_mode(false);
+                }
+                debounce_count = 0;
               }
-              rcA.debounce = tv.tv_sec;
             }
             if (io_num == rcA.DT_IO) {
               rcA.clk_value = gpio_get_level(rcA.CLK_IO);
@@ -68,82 +113,60 @@ static void rotary_encoder_task(void* arg)
                 if (rcA.clk_value) {
                   LED_payload = cJSON_CreateObject();
                   level_json = cJSON_CreateNumber(12);
-                  cJSON_AddItemToObject(LED_payload, "incBrightness", level_json);
-                  printf("Rotary A: CW\n");
+                  if (select_mode_enabled) {
+                    current_mode--;
+                    if (current_mode < 0) current_mode = 4;
+                  } else {
+                    cJSON_AddItemToObject(LED_payload, "decBrightness", level_json);
+                  }
+
+                  printf("CCW\n");
                 } else {
                   LED_payload = cJSON_CreateObject();
                   level_json = cJSON_CreateNumber(12);
-                  cJSON_AddItemToObject(LED_payload, "decBrightness", level_json);
-                  printf("Rotary A: CCW\n");
+                  if (select_mode_enabled) {
+                    current_mode++;
+                    if (current_mode > 4) current_mode = 0;
+                  } else {
+                    cJSON_AddItemToObject(LED_payload, "incBrightness", level_json);
+                  }
+                  printf("CW\n");
                 }
               }
               rcA.prev_dt_value = rcA.dt_value;
             }
 
-            // Event from Encoder B
-            if (io_num == rcB.SW_IO) {
-              rcB.pressed = gpio_get_level(rcB.SW_IO);
-              if (rcB.pressed) continue;
-              gettimeofday(&tv, NULL);
-              if (tv.tv_sec - rcB.debounce > 0) {
-                LED_payload = cJSON_CreateObject();
-                level_json = cJSON_CreateBool(true);
-                cJSON_AddItemToObject(LED_payload, "nextMode", level_json);
-                printf("Rotary B: Toggle\n");
-              }
-              rcB.debounce = tv.tv_sec;
-            }
-            if (io_num == rcB.DT_IO) {
-              rcB.clk_value = gpio_get_level(rcB.CLK_IO);
-              rcB.dt_value = gpio_get_level(rcB.DT_IO);
-
-              if (!rcB.dt_value && rcB.prev_dt_value) {
-                if (rcB.clk_value) {
-                  LED_payload = cJSON_CreateObject();
-                  if (PIXEL_COUNT < 1000) {
-                    PIXEL_COUNT+=8;
-                  }
-                  level_json = cJSON_CreateNumber(PIXEL_COUNT);
-                  cJSON_AddItemToObject(LED_payload, "setPixelCount", level_json);
-                  // cJSON_AddItemToObject(LED_payload, "nextMode", level_json);
-                  printf("Rotary B: CW (%d)\n", PIXEL_COUNT);
-                } else {
-                  LED_payload = cJSON_CreateObject();
-                  if (PIXEL_COUNT > 8) {
-                    PIXEL_COUNT-=8;
-                  } else {
-                    PIXEL_COUNT = 0;
-                  }
-                  level_json = cJSON_CreateNumber(PIXEL_COUNT);
-                  cJSON_AddItemToObject(LED_payload, "setPixelCount", level_json);
-                  printf("Rotary B: CCW (%d)\n", PIXEL_COUNT);
-                }
-              }
-              rcB.prev_dt_value = rcB.dt_value;
-            }
         }
     }
+}
+
+static void debounce_task(void *pvParameter) {
+  while (1) {
+    debounce_count++;
+    vTaskDelay(10 / portTICK_PERIOD_MS);
+  }
+}
+
+static void hold_task(void *pvParameter) {
+  while (1) {
+    hold_cnt++;
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+  }
 }
 
 void rotary_encoder_main()
 {
 
-    rcA.SW_IO = 15;
+    rcA.SW_IO = 16;
     rcA.CLK_IO = 4;
     rcA.DT_IO = 5;
 
-    rcB.SW_IO = 21;
-    rcB.CLK_IO = 22;
-    rcB.DT_IO = 23;
 
     // #define GPIO_INPUT_PIN_SEL  ((1ULL<<SW_A_IO) | (1ULL<<CLK_A_IO) | (1ULL<<DT_A_IO) | (1ULL<<SW_B_IO) | (1ULL<<CLK_B_IO) | (1ULL<<DT_B_IO))
     unsigned long long GPIO_INPUT_PIN_SEL =
       (1ULL<<rcA.SW_IO)
       | (1ULL<<rcA.CLK_IO)
-      | (1ULL<<rcA.DT_IO)
-      | (1ULL<<rcB.SW_IO)
-      | (1ULL<<rcB.CLK_IO)
-      | (1ULL<<rcB.DT_IO);
+      | (1ULL<<rcA.DT_IO);
 
     gpio_config_t io_conf;
     io_conf.intr_type = GPIO_PIN_INTR_ANYEDGE;
@@ -154,14 +177,12 @@ void rotary_encoder_main()
 
     gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
     xTaskCreate(rotary_encoder_task, "rotary_encoder_task", 2048, NULL, 10, NULL);
+    xTaskCreate(debounce_task, "debounce_task", 2048, NULL, 10, NULL);
+    xTaskCreate(hold_task, "hold_task", 2048, NULL, 10, NULL);
 
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
 
     gpio_isr_handler_add(rcA.SW_IO, gpio_isr_handler, (void*) rcA.SW_IO);
     gpio_isr_handler_add(rcA.CLK_IO, gpio_isr_handler, (void*) rcA.CLK_IO);
     gpio_isr_handler_add(rcA.DT_IO, gpio_isr_handler, (void*) rcA.DT_IO);
-
-    gpio_isr_handler_add(rcB.SW_IO, gpio_isr_handler, (void*) rcB.SW_IO);
-    gpio_isr_handler_add(rcB.CLK_IO, gpio_isr_handler, (void*) rcB.CLK_IO);
-    gpio_isr_handler_add(rcB.DT_IO, gpio_isr_handler, (void*) rcB.DT_IO);
 }
