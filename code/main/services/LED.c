@@ -20,6 +20,7 @@ struct color {
   int g;
   int b;
   int brightness;
+  bool power;
 };
 
 struct color pixels;
@@ -37,11 +38,19 @@ int setPixels() {
   if (pixels.brightness < 0)   pixels.brightness = 0;
 
   setColor(
-    pixels.r * pixels.brightness / 255,
-    pixels.g * pixels.brightness / 255,
-    pixels.b * pixels.brightness / 255
+    pixels.r * pixels.power * pixels.brightness / 255,
+    pixels.g * pixels.power * pixels.brightness / 255,
+    pixels.b * pixels.power * pixels.brightness / 255
   );
 
+  return 0;
+}
+
+int setBrightness(int val) {
+  pixels.brightness=val;
+  setPixels();
+  printf("LED: set brightness to (%d)\n",
+    pixels.brightness);
   return 0;
 }
 
@@ -58,6 +67,30 @@ int decBrightness(int val) {
   setPixels();
   printf("LED: decreasing brightness to (%d)\n",
     pixels.brightness);
+  return 0;
+}
+
+int getBrightness() {
+  return pixels.brightness;
+}
+
+void setPower (bool val) {
+  pixels.power = val;
+  setPixels();
+  printf("LED: Power %d\n", pixels.power);
+}
+
+bool getPower () {
+  return pixels.power;
+}
+
+void toggleLED() {
+  pixels.power = !pixels.power;
+  setPixels();
+  printf("LED: Toggle %d\n", pixels.power);
+}
+
+int fadeLED(int start, int stop, int duration) {
   return 0;
 }
 
@@ -130,28 +163,13 @@ int prevMode() {
   return 0;
 }
 
-int toggleLED() {
-  if (pixels.brightness > 25) {
-    pixels.brightness = 0;
-  } else {
-    pixels.brightness = MAX_BRIGHTNESS;
-  }
-
-  printf("LED: toggle brightness %d\n",pixels.brightness);
-  setPixels();
-  return 0;
-}
-
-int fadeLED(int start, int stop, int duration) {
-  return 0;
-}
-
 static void LED_service(void *pvParameter) {
 
   pixels.r = MAX_BRIGHTNESS;
   pixels.g = MAX_BRIGHTNESS;
   pixels.b = MAX_BRIGHTNESS;
   pixels.brightness = MAX_BRIGHTNESS;
+  pixels.power = true;
 
   while (1) {
 

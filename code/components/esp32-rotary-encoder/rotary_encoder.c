@@ -93,9 +93,6 @@
 #include "driver/gpio.h"
 
 #define TAG "rotary_encoder"
-#define ESP_INTR_FLAG_DEFAULT 0
-
-//#define ROTARY_ENCODER_DEBUG
 
 // Use a single-item queue so that the last value can be easily overwritten by the interrupt handler
 #define EVENT_QUEUE_LENGTH 1
@@ -152,23 +149,21 @@ static uint8_t _process(rotary_encoder_info_t * info)
         uint8_t pin_state = (gpio_get_level(info->pin_b) << 1) | gpio_get_level(info->pin_a);
 
         // Determine new state from the pins and state table.
-#ifdef ROTARY_ENCODER_DEBUG
-        uint8_t old_state = info->table_state;
-#endif
+//        uint8_t old_state = info->table_state;
         info->table_state = info->table[info->table_state & 0xf][pin_state];
 
         // Return emit bits, i.e. the generated event.
         event = info->table_state & 0x30;
-#ifdef ROTARY_ENCODER_DEBUG
-        ESP_EARLY_LOGD(TAG, "BA %d%d, state 0x%02x, new state 0x%02x, event 0x%02x",
-                       pin_state >> 1, pin_state & 1, old_state, info->table_state, event);
-#endif
+
+//        ESP_EARLY_LOGD(TAG, "BA %d%d, state 0x%02x, new state 0x%02x, event 0x%02x",
+//                       pin_state >> 1, pin_state & 1, old_state, info->table_state, event);
     }
     return event;
 }
 
 static void _isr_rotenc(void * args)
 {
+    //ESP_EARLY_LOGD(TAG, "intr");
     rotary_encoder_info_t * info = (rotary_encoder_info_t *)args;
     uint8_t event = _process(info);
     bool send_event = false;
@@ -178,11 +173,13 @@ static void _isr_rotenc(void * args)
     case DIR_CW:
         ++info->state.position;
         info->state.direction = ROTARY_ENCODER_DIRECTION_CLOCKWISE;
+        //ESP_EARLY_LOGI(TAG, "%d", knob->position);
         send_event = true;
         break;
     case DIR_CCW:
         --info->state.position;
         info->state.direction = ROTARY_ENCODER_DIRECTION_COUNTER_CLOCKWISE;
+        //ESP_EARLY_LOGI(TAG, "%d", knob->position);
         send_event = true;
         break;
     default:
@@ -200,6 +197,7 @@ static void _isr_rotenc(void * args)
             },
         };
         BaseType_t task_woken = pdFALSE;
+//        xQueueSendToBackFromISR(info->queue, &queue_event, &task_woken);
         xQueueOverwriteFromISR(info->queue, &queue_event, &task_woken);
         if (task_woken)
         {
@@ -230,8 +228,6 @@ esp_err_t rotary_encoder_init(rotary_encoder_info_t * info, gpio_num_t pin_a, gp
         gpio_set_pull_mode(info->pin_b, GPIO_PULLUP_ONLY);
         gpio_set_direction(info->pin_b, GPIO_MODE_INPUT);
         gpio_set_intr_type(info->pin_b, GPIO_INTR_ANYEDGE);
-
-        gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
 
         // install interrupt handlers
         gpio_isr_handler_add(info->pin_a, _isr_rotenc, info);
