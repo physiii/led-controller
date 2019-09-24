@@ -25,6 +25,15 @@ struct color {
 
 struct color pixels;
 
+
+void storePixels () {
+  store_u32("r", pixels.r);
+  store_u32("g", pixels.g);
+  store_u32("b", pixels.b);
+  store_u32("brightness", pixels.brightness);
+  store_u32("power", pixels.power);
+}
+
 int setPixels() {
   if (pixels.r < 0) pixels.r = 0;
   if (pixels.g < 0) pixels.g = 0;
@@ -42,6 +51,8 @@ int setPixels() {
     pixels.g * pixels.power * pixels.brightness / 255,
     pixels.b * pixels.power * pixels.brightness / 255
   );
+
+  storePixels();
 
   return 0;
 }
@@ -165,11 +176,21 @@ int prevMode() {
 
 static void LED_service(void *pvParameter) {
 
-  pixels.r = MAX_BRIGHTNESS;
-  pixels.g = MAX_BRIGHTNESS;
-  pixels.b = MAX_BRIGHTNESS;
-  pixels.brightness = MAX_BRIGHTNESS;
-  pixels.power = true;
+  pixels.r = get_u32("r", pixels.r);
+  pixels.g = get_u32("g", pixels.g);
+  pixels.b = get_u32("b", pixels.b);
+  pixels.brightness = get_u32("brightness", pixels.brightness);
+  if (get_u32("power", pixels.power)) {
+    pixels.power=true;
+  } else pixels.power = false;
+  setPixels();
+  // vTaskDelay(100 / portTICK_PERIOD_MS);
+
+  // pixels.r = MAX_BRIGHTNESS;
+  // pixels.g = MAX_BRIGHTNESS;
+  // pixels.b = MAX_BRIGHTNESS;
+  // pixels.brightness = MAX_BRIGHTNESS;
+  // pixels.power = true;
 
   while (1) {
 

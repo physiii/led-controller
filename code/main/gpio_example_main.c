@@ -26,6 +26,7 @@
 #define RESET_AT          0      // Set to a positive non-zero number to reset the position if this value is exceeded
 #define FLIP_DIRECTION    false  // Set to true to reverse the clockwise/counterclockwise sense
 
+int sw_debounce = 1;
 int debounce_count = 0;
 int hold_thresh = 2;
 int hold_cnt = 0;
@@ -98,11 +99,13 @@ static void gpio_task(void* arg)
                     if (getPower()) {
                       start_motion_off_delay = true;
                       start_motion_delay = false;
-                      setPower(false);
+                      if (debounce_count > sw_debounce) setPower(false);
+                      debounce_count = 0;
                     } else {
                       start_motion_delay = true;
                       start_motion_off_delay = false;
-                      setPower(true);
+                      if (debounce_count > sw_debounce) setPower(true);
+                      debounce_count = 0;
                     }
                   }
                   start_hold_count(false);
@@ -214,6 +217,7 @@ void app_main()
 
     // esp32-rotary-encoder requires that the GPIO ISR service is installed before calling rotary_encoder_register()
 
+    storage_init();
     LED_main();
     setPixelCount(300);
 
