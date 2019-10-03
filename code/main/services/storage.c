@@ -137,7 +137,7 @@ void store_u32(char * key, uint32_t value) {
         err = nvs_set_u32(my_handle, key, value);
 
         if (err == ESP_OK) {
-	  printf("%s %s:%u\n", tag, key, value);
+	  // printf("%s %s:%u\n", tag, key, value);
 	}
 	else {
 	  printf("%s write failed %u\n", tag, value);

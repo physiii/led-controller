@@ -14,8 +14,12 @@ int MAX_BRIGHTNESS = 255;
 int current_mode = 0;
 int number_of_modes = 4;
 int current_LED_level = 0;
+bool led_off_timer_expired = true;
+int led_off_time = 60;
+int led_off_count = 0;
 
-struct color {
+struct color
+{
   int r;
   int g;
   int b;
@@ -25,8 +29,31 @@ struct color {
 
 struct color pixels;
 
+void setPower(bool);
 
-void storePixels () {
+void start_led_off_timer(bool val)
+{
+  if (val) {
+    led_off_timer_expired = false;
+    led_off_count = 0;
+  } else {
+    led_off_timer_expired = true;
+  }
+}
+
+static void led_off_timer(void *pvParameter)
+{
+  while (1) {
+    if (led_off_count > led_off_time && !led_off_timer_expired) {
+      led_off_timer_expired = true;
+      setPower(false);
+    } else led_off_count++;
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+}
+
+void storePixels ()
+{
   store_u32("r", pixels.r);
   store_u32("g", pixels.g);
   store_u32("b", pixels.b);
@@ -34,7 +61,8 @@ void storePixels () {
   store_u32("power", pixels.power);
 }
 
-int setPixels() {
+int setPixels()
+{
   if (pixels.r < 0) pixels.r = 0;
   if (pixels.g < 0) pixels.g = 0;
   if (pixels.b < 0) pixels.b = 0;
@@ -57,7 +85,8 @@ int setPixels() {
   return 0;
 }
 
-int setBrightness(int val) {
+int setBrightness(int val)
+{
   pixels.brightness=val;
   setPixels();
   printf("LED: set brightness to (%d)\n",
@@ -65,7 +94,8 @@ int setBrightness(int val) {
   return 0;
 }
 
-int incBrightness(int val) {
+int incBrightness(int val)
+{
   pixels.brightness+=val;
   setPixels();
   printf("LED: increasing brightness to (%d)\n",
@@ -73,7 +103,8 @@ int incBrightness(int val) {
   return 0;
 }
 
-int decBrightness(int val) {
+int decBrightness(int val)
+{
   pixels.brightness-=val;
   setPixels();
   printf("LED: decreasing brightness to (%d)\n",
@@ -81,31 +112,37 @@ int decBrightness(int val) {
   return 0;
 }
 
-int getBrightness() {
+int getBrightness()
+{
   return pixels.brightness;
 }
 
-void setPower (bool val) {
+void setPower (bool val)
+{
   pixels.power = val;
   setPixels();
   printf("LED: Power %d\n", pixels.power);
 }
 
-bool getPower () {
+bool getPower ()
+{
   return pixels.power;
 }
 
-void toggleLED() {
+void toggleLED()
+{
   pixels.power = !pixels.power;
   setPixels();
   printf("LED: Toggle %d\n", pixels.power);
 }
 
-int fadeLED(int start, int stop, int duration) {
+int fadeLED(int start, int stop, int duration)
+{
   return 0;
 }
 
-int setMode(int mode) {
+int setMode(int mode)
+{
 
   if (mode == WHITE) {
     pixels.r = 255;
@@ -144,7 +181,8 @@ int setMode(int mode) {
   return 0;
 }
 
-int setPixelCount(int num) {
+int setPixelCount(int num)
+{
   PIXEL_COUNT = num;
   // reset_pixels();
   setPixels();
@@ -152,7 +190,8 @@ int setPixelCount(int num) {
   return 0;
 }
 
-int nextMode() {
+int nextMode()
+{
   if (current_mode < number_of_modes) {
     current_mode++;
   } else {
@@ -163,7 +202,8 @@ int nextMode() {
   return 0;
 }
 
-int prevMode() {
+int prevMode()
+{
   if (current_mode > 0) {
     current_mode--;
   } else {
@@ -174,7 +214,8 @@ int prevMode() {
   return 0;
 }
 
-static void LED_service(void *pvParameter) {
+static void LED_service(void *pvParameter)
+{
 
   pixels.r = get_u32("r", pixels.r);
   pixels.g = get_u32("g", pixels.g);
@@ -259,7 +300,8 @@ static void LED_service(void *pvParameter) {
   }
 }
 
-int LED_main() {
+int LED_main()
+{
   ws2812b_main();
   printf("starting LED service\n");
   xTaskCreate(&LED_service, "LED_service_task", 5000, NULL, 5, NULL);

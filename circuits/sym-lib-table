@@ -2,4 +2,5 @@
   (lib (name liger-rescue)(type Legacy)(uri ${KIPRJMOD}/liger-rescue.lib)(options "")(descr "")(disabled))
   (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr "")(disabled))
   (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr "")(disabled))
+  (lib (name led-controller-rescue)(type Legacy)(uri ${KIPRJMOD}/led-controller-rescue.lib)(options "")(descr ""))
 )
