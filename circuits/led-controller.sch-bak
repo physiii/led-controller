@@ -425,15 +425,14 @@ F 4 "SPH0645LM4H-B" H 6750 7650 60  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L open-automation:MAX98357AETE+T U?
-U 1 1 5DA4EBE7
-P 8900 7350
-F 0 "U?" H 9100 7828 60  0000 C CNN
-F 1 "MAX98357AETE+T" H 9100 7722 60  0000 C CNN
-F 2 "open-automation:MAX98357A" H 9250 6900 60  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/maxim-integrated/MAX98357AETE-T/MAX98357AETE-TCT-ND/7603777" H 9075 6925 60  0001 C CNN
-F 4 "MAX98357AETE+T" H 9100 7616 60  0000 C CNN "Part Number"
-	1    8900 7350
+L Amplifier_Audio:MAX9715ETE+ U?
+U 1 1 5DA4AF78
+P 9500 7350
+F 0 "U?" H 9500 8031 50  0000 C CNN
+F 1 "MAX9715ETE+" H 9500 7940 50  0000 C CNN
+F 2 "Package_DFN_QFN:TQFN-16-1EP_5x5mm_P0.8mm_EP3.1x3.1mm" H 9500 7350 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX9715.pdf" H 9500 7350 50  0001 C CNN
+	1    9500 7350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
