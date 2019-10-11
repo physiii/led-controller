@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:liger-cache
-EELAYER 29 0
+LIBS:led-controller-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -15,107 +15,338 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR012
-U 1 1 5909DD67
-P 6375 3125
-F 0 "#PWR012" H 6375 2875 50  0001 C CNN
-F 1 "GND" H 6375 2975 50  0000 C CNN
-F 2 "" H 6375 3125 50  0000 C CNN
-F 3 "" H 6375 3125 50  0000 C CNN
-	1    6375 3125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
+L power:GND #PWR0107
 U 1 1 59A4BAA9
-P 4750 3100
-F 0 "#PWR013" H 4750 2850 50  0001 C CNN
-F 1 "GND" H 4750 2950 50  0000 C CNN
-F 2 "" H 4750 3100 50  0000 C CNN
-F 3 "" H 4750 3100 50  0000 C CNN
-	1    4750 3100
+P 3650 4500
+F 0 "#PWR0107" H 3650 4250 50  0001 C CNN
+F 1 "GND" H 3650 4350 50  0000 C CNN
+F 2 "" H 3650 4500 50  0000 C CNN
+F 3 "" H 3650 4500 50  0000 C CNN
+	1    3650 4500
 	1    0    0    -1  
 $EndComp
 Text Label 4750 1400 0    394  ~ 0
 Power
-Connection ~ 4750 2700
-Wire Wire Line
-	4750 3100 4750 3050
-Wire Wire Line
-	4600 2700 4750 2700
-Wire Wire Line
-	6375 3125 6375 3075
 $Comp
-L liger-rescue:AP2112 U9
-U 1 1 5A164E45
-P 5600 2775
-F 0 "U9" H 5775 2600 60  0000 C CNN
-F 1 "AP2112" H 5600 2975 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5600 2450 60  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/diodes-incorporated/AP2112K-3.3TRG1/AP2112K-3.3TRG1DICT-ND/4505257" H 5600 2350 60  0001 C CNN
-F 4 "AP2112K-3.3TRG1" H 5600 3075 60  0001 C CNN "Part Number"
-	1    5600 2775
+L power:GND #PWR0108
+U 1 1 59B41D6D
+P 7450 4450
+F 0 "#PWR0108" H 7450 4200 50  0001 C CNN
+F 1 "GND" H 7450 4300 50  0000 C CNN
+F 2 "" H 7450 4450 50  0000 C CNN
+F 3 "" H 7450 4450 50  0000 C CNN
+	1    7450 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L power:GND #PWR0109
+U 1 1 59B58DE3
+P 3150 4600
+F 0 "#PWR0109" H 3150 4350 50  0001 C CNN
+F 1 "GND" H 3150 4450 50  0000 C CNN
+F 2 "" H 3150 4600 50  0000 C CNN
+F 3 "" H 3150 4600 50  0000 C CNN
+	1    3150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L open-automation:R_2k R19
+U 1 1 59B5A181
+P 7550 4250
+F 0 "R19" V 7550 4250 50  0000 C CNN
+F 1 "R_2k" V 7450 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7480 4250 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-072KL/311-2.0KGRCT-ND/729673" V 7630 4250 50  0001 C CNN
+F 4 "ERA-3AEB202V" V 7730 4350 60  0001 C CNN "Part Number"
+	1    7550 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L open-automation:D_Schottky-BAT20JFILM D6
+U 1 1 59EBB5BE
+P 3450 4100
+F 0 "D6" H 3450 4200 50  0000 C CNN
+F 1 "D_Schottky-BAT20JFILM" H 3450 4000 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3450 3925 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/stmicroelectronics/BAT20JFILM/497-3381-1-ND/669138" H 3450 3850 50  0001 C CNN
+F 4 "BAT20JFILM" H 3500 4275 60  0001 C CNN "Part Number"
+	1    3450 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 4500 3650 4450
+$Comp
+L power:GND #PWR0110
 U 1 1 5A1650D9
-P 6100 2900
-F 0 "#PWR018" H 6100 2650 50  0001 C CNN
-F 1 "GND" H 6100 2750 50  0000 C CNN
-F 2 "" H 6100 2900 50  0000 C CNN
-F 3 "" H 6100 2900 50  0000 C CNN
-	1    6100 2900
+P 4000 4350
+F 0 "#PWR0110" H 4000 4100 50  0001 C CNN
+F 1 "GND" H 4000 4200 50  0000 C CNN
+F 2 "" H 4000 4350 50  0000 C CNN
+F 3 "" H 4000 4350 50  0000 C CNN
+	1    4000 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 2850 6100 2850
-Wire Wire Line
-	6100 2850 6100 2900
-Wire Wire Line
-	6375 2700 6375 2775
-Wire Wire Line
-	6050 2700 6375 2700
-Wire Wire Line
-	5100 2850 5150 2850
-Connection ~ 5100 2700
-Connection ~ 6375 2700
-Wire Wire Line
-	4750 2700 5100 2700
-Wire Wire Line
-	4750 2700 4750 2750
-Wire Wire Line
-	5100 2700 5100 2850
-Wire Wire Line
-	5100 2700 5150 2700
-Wire Wire Line
-	6375 2700 6500 2700
-Text HLabel 4600 2700 0    60   Input ~ 0
-V_USB
-Text HLabel 6500 2700 2    60   Output ~ 0
-3V3
+	3650 4100 3650 4150
+Text HLabel 4250 2850 0    60   Input ~ 0
+V_IN
 $Comp
 L open-automation:C_1uF C8
 U 1 1 5B1EEF77
-P 6375 2925
-F 0 "C8" H 6490 2971 50  0000 L CNN
-F 1 "C_1uF" H 6490 2880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6475 3225 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/CGA3E1X7R1C105M080AC/445-12540-1-ND/3954206" H 6375 2675 50  0001 C CNN
-F 4 "CL10B105KP8NNNC" H 6500 3125 60  0001 C CNN "Part Number"
-	1    6375 2925
+P 4900 4400
+F 0 "C8" H 5015 4446 50  0000 L CNN
+F 1 "C_1uF" H 5015 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 4700 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/CGA3E1X7R1C105M080AC/445-12540-1-ND/3954206" H 4900 4150 50  0001 C CNN
+F 4 "CL10B105KP8NNNC" H 5025 4600 60  0001 C CNN "Part Number"
+	1    4900 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L open-automation:C_1uF C7
 U 1 1 5B1EF368
-P 4750 2900
-F 0 "C7" H 4865 2946 50  0000 L CNN
-F 1 "C_1uF" H 4865 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4850 3200 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/CGA3E1X7R1C105M080AC/445-12540-1-ND/3954206" H 4750 2650 50  0001 C CNN
-F 4 "CL10B105KP8NNNC" H 4875 3100 60  0001 C CNN "Part Number"
-	1    4750 2900
+P 3650 4300
+F 0 "C7" H 3450 4300 50  0000 L CNN
+F 1 "C_1uF" H 3400 4200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3750 4600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/CGA3E1X7R1C105M080AC/445-12540-1-ND/3954206" H 3650 4050 50  0001 C CNN
+F 4 "CL10B105KP8NNNC" H 3775 4500 60  0001 C CNN "Part Number"
+	1    3650 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L open-automation:R_10K R22
+U 1 1 59B5A0F4
+P 3150 4350
+F 0 "R22" V 3150 4350 50  0000 C CNN
+F 1 "R_10k" V 3050 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3080 4350 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-0710KL/311-10KGRCT-ND/729647" V 3230 4350 50  0001 C CNN
+F 4 "MCT06030C1002FP500" V 3330 4450 60  0001 C CNN "Part Number"
+	1    3150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4150 3150 4100
+$Comp
+L open-automation:REG-3.3v U11
+U 1 1 5DA02E3D
+P 4450 4200
+F 0 "U11" H 4425 4525 50  0000 C CNN
+F 1 "REG-3.3v" H 4425 4434 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4400 3925 50  0001 C CIN
+F 3 "https://www.digikey.com/product-detail/en/on-semiconductor/NCP1117DT33T5G/NCP1117DT33T5GOSCT-ND/2121236" H 4425 3850 50  0001 C CNN
+F 4 "NCP1117DT33T5G" H 4475 4525 60  0001 C CNN "Part Number"
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4350 4000 4300
+Wire Wire Line
+	4000 4300 4050 4300
+$Comp
+L power:GND #PWR0111
+U 1 1 5909DD67
+P 4900 4600
+F 0 "#PWR0111" H 4900 4350 50  0001 C CNN
+F 1 "GND" H 4900 4450 50  0000 C CNN
+F 2 "" H 4900 4600 50  0000 C CNN
+F 3 "" H 4900 4600 50  0000 C CNN
+	1    4900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4600 4900 4550
+Wire Wire Line
+	4800 4200 4900 4200
+Wire Wire Line
+	4900 4200 4900 4250
+Text Label 3650 3600 0    60   ~ 0
+V_BAT
+Text Label 4300 2850 0    60   ~ 0
+V_IN
+Wire Wire Line
+	4300 2850 4250 2850
+Wire Wire Line
+	3650 3600 3650 3650
+Wire Wire Line
+	3600 4100 3650 4100
+Connection ~ 3650 4100
+Wire Wire Line
+	3650 4050 3650 4100
+Wire Wire Line
+	3150 4100 3300 4100
+Text Label 3200 3850 2    60   ~ 0
+V_IN
+$Comp
+L open-automation:PMOS-DMG3413L Q4
+U 1 1 59B57188
+P 3550 3850
+F 0 "Q4" H 3700 4000 50  0000 L CNN
+F 1 "PMOS-DMG3413L" H 3300 3700 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 3775 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/diodes-incorporated/DMG3413L-7/DMG3413L-7DICT-ND/5218387" H 3750 3925 50  0001 L CNN
+F 4 "DMG3413L-7" H 3850 4025 60  0001 C CNN "Part Number"
+	1    3550 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3850 3150 4100
+Wire Wire Line
+	3150 3850 3350 3850
+Connection ~ 3150 4100
+Wire Wire Line
+	3150 4600 3150 4550
+Wire Wire Line
+	3650 4100 4050 4100
+$Comp
+L open-automation:R_1k R10
+U 1 1 59B41A3B
+P 6350 4250
+F 0 "R10" V 6430 4250 50  0000 C CNN
+F 1 "R_1k" V 6350 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4250 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-071KL/311-1.0KGRCT-ND/729624" V 6430 4250 50  0001 C CNN
+F 4 "ESR03EZPJ102" V 6530 4350 60  0001 C CNN "Part Number"
+	1    6350 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 4050 6350 4050
+Wire Wire Line
+	6350 4050 6350 4100
+Wire Wire Line
+	6350 4400 6350 4450
+$Comp
+L open-automation:LED-0603-G D?
+U 1 1 5BBE79A0
+P 6350 4600
+AR Path="/59092AD4/5BBE79A0" Ref="D?"  Part="1" 
+AR Path="/5909D8E3/5BBE79A0" Ref="D3"  Part="1" 
+AR Path="/5DA19341/5BBE79A0" Ref="D4"  Part="1" 
+F 0 "D4" V 6325 4750 50  0000 R CNN
+F 1 "LED-0603-G" V 6050 4900 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6250 4600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/rohm-semiconductor/SML-D12M8WT86/511-1578-1-ND/1641810" H 6350 4700 50  0001 C CNN
+F 4 "SML-D12M8WT86" H 6450 4800 50  0001 C CNN "Part Number"
+	1    6350 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 4750 6350 4800
+Wire Wire Line
+	6350 4800 6450 4800
+Wire Wire Line
+	6450 4800 6450 4250
+Text Label 6400 4050 2    60   ~ 0
+V_IN
+Wire Wire Line
+	7400 4250 7400 4450
+Wire Wire Line
+	7400 4450 7450 4450
+Wire Wire Line
+	7450 4450 7550 4450
+Wire Wire Line
+	7550 4450 7550 4400
+Connection ~ 7450 4450
+Wire Wire Line
+	7400 4150 7450 4150
+Wire Wire Line
+	7450 4150 7450 4100
+Wire Wire Line
+	7450 4100 7550 4100
+Text HLabel 4250 3050 0    60   Input ~ 0
+3V3
+Text Label 4300 3050 0    60   ~ 0
+3V3
+Wire Wire Line
+	4300 3050 4250 3050
+Text Label 4850 4200 0    60   ~ 0
+3V3
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J?
+U 1 1 5DA08F5F
+P 6850 2950
+AR Path="/5DA08F5F" Ref="J?"  Part="1" 
+AR Path="/5DA19341/5DA08F5F" Ref="J4"  Part="1" 
+F 0 "J4" H 6900 2900 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6900 3150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 6850 2950 50  0001 C CNN
+F 3 "~" H 6850 2950 50  0001 C CNN
+	1    6850 2950
+	1    0    0    -1  
+$EndComp
+Text Label 6600 2950 2    60   ~ 0
+V_IN
+Wire Wire Line
+	6600 2950 6650 2950
+$Comp
+L power:GND #PWR0112
+U 1 1 5DA0A5EE
+P 6600 3100
+F 0 "#PWR0112" H 6600 2850 50  0001 C CNN
+F 1 "GND" H 6600 2950 50  0000 C CNN
+F 2 "" H 6600 3100 50  0000 C CNN
+F 3 "" H 6600 3100 50  0000 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3100 6600 3050
+Wire Wire Line
+	6600 3050 6650 3050
+Text Label 7200 2950 0    60   ~ 0
+V_BAT
+Wire Wire Line
+	7200 3050 7150 3050
+Wire Wire Line
+	7200 2950 7150 2950
+$Comp
+L power:GND #PWR0113
+U 1 1 5DA2EA34
+P 7200 3100
+F 0 "#PWR0113" H 7200 2850 50  0001 C CNN
+F 1 "GND" H 7200 2950 50  0000 C CNN
+F 2 "" H 7200 3100 50  0000 C CNN
+F 3 "" H 7200 3100 50  0000 C CNN
+	1    7200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3100 7200 3050
+$Comp
+L open-automation:MCP73831T U6
+U 1 1 59B41D1D
+P 6950 4150
+F 0 "U6" H 6950 3950 60  0000 C CNN
+F 1 "MCP73831T" H 6900 4350 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 7200 3850 60  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802" H 7450 3750 60  0001 C CNN
+F 4 "MCP73831T-2ACI/OT" H 6900 4450 60  0001 C CNN "Part Number"
+	1    6950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L open-automation:C_1uF C9
+U 1 1 5B1EF9E4
+P 7800 4250
+F 0 "C9" H 7900 4250 50  0000 L CNN
+F 1 "C_1uF" H 7850 4150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 4550 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/CGA3E1X7R1C105M080AC/445-12540-1-ND/3954206" H 7800 4000 50  0001 C CNN
+F 4 "CL10B105KP8NNNC" H 7925 4450 60  0001 C CNN "Part Number"
+	1    7800 4250
+	1    0    0    -1  
+$EndComp
+Text Label 7600 4050 0    60   ~ 0
+V_BAT
+Wire Wire Line
+	7400 4050 7800 4050
+Wire Wire Line
+	7800 4050 7800 4100
+Wire Wire Line
+	7800 4400 7800 4450
+Wire Wire Line
+	7800 4450 7550 4450
+Connection ~ 7550 4450
 $EndSCHEMATC

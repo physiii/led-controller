@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:liger-cache
-EELAYER 29 0
+LIBS:led-controller-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -14,13 +14,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 5425 1950 0    197  ~ 0
-AUDIO
 $Comp
-L liger-rescue:SPH0645LM4H-B U3
+L open-automation:SPH0645LM4H-B U1
 U 1 1 5A1620A8
 P 4100 4300
-F 0 "U3" H 4300 4000 60  0000 C CNN
+F 0 "U1" H 4300 4000 60  0000 C CNN
 F 1 "SPH0645LM4H-B" H 4100 4500 60  0000 C CNN
 F 2 "open-automation:SPH0645LM4H-B" H 4100 3900 60  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/knowles/SPH0645LM4H-B/423-1405-6-ND/5332436" H 4050 3800 60  0001 C CNN
@@ -29,10 +27,10 @@ F 4 "SPH0645LM4H-B" H 4100 4600 60  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L power:GND #PWR0101
 U 1 1 5A1620A9
 P 3650 4550
-F 0 "#PWR06" H 3650 4300 50  0001 C CNN
+F 0 "#PWR0101" H 3650 4300 50  0001 C CNN
 F 1 "GND" H 3650 4400 50  0000 C CNN
 F 2 "" H 3650 4550 50  0000 C CNN
 F 3 "" H 3650 4550 50  0000 C CNN
@@ -40,10 +38,10 @@ F 3 "" H 3650 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L power:GND #PWR0102
 U 1 1 5A1620AB
 P 3400 4750
-F 0 "#PWR07" H 3400 4500 50  0001 C CNN
+F 0 "#PWR0102" H 3400 4500 50  0001 C CNN
 F 1 "GND" H 3400 4600 50  0000 C CNN
 F 2 "" H 3400 4750 50  0000 C CNN
 F 3 "" H 3400 4750 50  0000 C CNN
@@ -51,34 +49,10 @@ F 3 "" H 3400 4750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L liger-rescue:R_47.5 R11
-U 1 1 5A1620AC
-P 4750 4150
-F 0 "R11" V 4750 4150 50  0000 C CNN
-F 1 "R_47.5" V 4675 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 4150 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-0747R5L/311-47.5HRCT-ND/730201" V 4830 4150 50  0001 C CNN
-F 4 "ERJ-3EKF47R5V" V 4930 4250 60  0001 C CNN "Part Number"
-	1    4750 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L liger-rescue:R_100k R9
-U 1 1 5A1620AD
-P 4750 3950
-F 0 "R9" V 4750 3950 50  0000 C CNN
-F 1 "R_100k" V 4650 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 3950 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-07100KL/311-100KGRCT-ND/729645" V 4830 3950 50  0001 C CNN
-F 4 "ERA-3AEB104V" V 4930 4050 60  0001 C CNN "Part Number"
-	1    4750 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR08
+L power:GND #PWR0103
 U 1 1 5A1620AE
 P 4950 3950
-F 0 "#PWR08" H 4950 3700 50  0001 C CNN
+F 0 "#PWR0103" H 4950 3700 50  0001 C CNN
 F 1 "GND" H 4950 3800 50  0000 C CNN
 F 2 "" H 4950 3950 50  0000 C CNN
 F 3 "" H 4950 3950 50  0000 C CNN
@@ -96,8 +70,6 @@ Wire Wire Line
 	4550 4250 4500 4250
 Wire Wire Line
 	4900 3950 4950 3950
-Wire Wire Line
-	4900 4150 5050 4150
 Wire Wire Line
 	3400 4700 3400 4750
 Connection ~ 3400 4250
@@ -119,10 +91,10 @@ Wire Wire Line
 Text Label 3200 3550 0    197  ~ 0
 Microphone
 $Comp
-L liger-rescue:R_100k R17
+L open-automation:R_100K R13
 U 1 1 5A1620AF
 P 7000 4325
-F 0 "R17" V 7000 4325 50  0000 C CNN
+F 0 "R13" V 7000 4325 50  0000 C CNN
 F 1 "R_100k" V 6925 4325 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 4325 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-07100KL/311-100KGRCT-ND/729645" V 7080 4325 50  0001 C CNN
@@ -131,10 +103,10 @@ F 4 "ERA-3AEB104V" V 7180 4425 60  0001 C CNN "Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR09
+L power:GND #PWR0104
 U 1 1 5A1620B0
 P 7225 4550
-F 0 "#PWR09" H 7225 4300 50  0001 C CNN
+F 0 "#PWR0104" H 7225 4300 50  0001 C CNN
 F 1 "GND" H 7225 4400 50  0000 C CNN
 F 2 "" H 7225 4550 50  0000 C CNN
 F 3 "" H 7225 4550 50  0000 C CNN
@@ -155,10 +127,8 @@ Wire Wire Line
 	8350 4250 8575 4250
 Wire Wire Line
 	8450 4450 8350 4450
-Wire Wire Line
-	8450 4350 8350 4350
 $Comp
-L liger-rescue:MAX98357AETE+T U5
+L open-automation:MAX98357AETE+T U5
 U 1 1 5A1620B1
 P 7600 4275
 F 0 "U5" H 8050 3925 60  0000 C CNN
@@ -175,10 +145,10 @@ Wire Wire Line
 	7200 4350 7200 4450
 Connection ~ 7200 4450
 $Comp
-L power:GND #PWR010
+L power:GND #PWR0105
 U 1 1 5A1620B2
 P 6750 4325
-F 0 "#PWR010" H 6750 4075 50  0001 C CNN
+F 0 "#PWR0105" H 6750 4075 50  0001 C CNN
 F 1 "GND" V 6700 4150 50  0000 C CNN
 F 2 "" H 6750 4325 50  0000 C CNN
 F 3 "" H 6750 4325 50  0000 C CNN
@@ -197,10 +167,10 @@ Wire Wire Line
 	7000 4475 7000 4450
 Connection ~ 7000 4450
 $Comp
-L power:GND #PWR011
+L power:GND #PWR0106
 U 1 1 5A1620B4
 P 7000 4825
-F 0 "#PWR011" H 7000 4575 50  0001 C CNN
+F 0 "#PWR0106" H 7000 4575 50  0001 C CNN
 F 1 "GND" H 7000 4675 50  0000 C CNN
 F 2 "" H 7000 4825 50  0000 C CNN
 F 3 "" H 7000 4825 50  0000 C CNN
@@ -209,18 +179,6 @@ F 3 "" H 7000 4825 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7000 4825 7000 4775
-$Comp
-L liger-rescue:speaker-CVS-1508 LS1
-U 1 1 5A1620B5
-P 8900 3950
-F 0 "LS1" H 8900 4075 50  0000 R CNN
-F 1 "speaker-CVS-1508" H 8950 4100 50  0001 R CNN
-F 2 "open-automation:speaker-1508" H 8900 3750 50  0001 C CNN
-F 3 "http://www.cui.com/product/resource/cvs-1508.pdf" H 8890 3900 50  0001 C CNN
-F 4 "CVS-1508" H 9050 4275 60  0001 C CNN "Part Number"
-	1    8900 3950
-	1    0    0    -1  
-$EndComp
 Text Label 7225 3525 0    197  ~ 0
 Speaker
 Wire Wire Line
@@ -234,11 +192,11 @@ Wire Wire Line
 Wire Wire Line
 	7000 4450 7200 4450
 $Comp
-L open-automation:C_0.1uF C5
+L open-automation:C_0.1uF C1
 U 1 1 5B1F056C
 P 3400 4550
-F 0 "C5" H 3515 4596 50  0000 L CNN
-F 1 "C_0.1uF" H 3515 4505 50  0000 L CNN
+F 0 "C1" H 3200 4550 50  0000 L CNN
+F 1 "C_0.1uF" H 3050 4650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 4850 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/C1608X8R1H104K080AB/445-8818-1-ND/3248223" H 3400 4300 50  0001 C CNN
 F 4 "CL10F104ZO8NNNC" H 3525 4750 60  0001 C CNN "Part Number"
@@ -246,31 +204,19 @@ F 4 "CL10F104ZO8NNNC" H 3525 4750 60  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L open-automation:C_0.1uF C6
+L open-automation:C_0.1uF C2
 U 1 1 5B1F08F4
 P 7000 4625
-F 0 "C6" H 7115 4671 50  0000 L CNN
-F 1 "C_0.1uF" H 7115 4580 50  0000 L CNN
+F 0 "C2" H 6800 4650 50  0000 L CNN
+F 1 "C_0.1uF" H 6700 4550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7100 4925 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/tdk-corporation/C1608X8R1H104K080AB/445-8818-1-ND/3248223" H 7000 4375 50  0001 C CNN
 F 4 "CL10F104ZO8NNNC" H 7125 4825 60  0001 C CNN "Part Number"
 	1    7000 4625
 	1    0    0    -1  
 $EndComp
-Text HLabel 5050 4150 2    60   Input ~ 0
-I2S_DATA_IN
-Text HLabel 6900 4450 0    60   Input ~ 0
-V_IN
-Text HLabel 4600 4350 2    60   Input ~ 0
-I2S_WS
-Text HLabel 4600 4450 2    60   Input ~ 0
-I2S_BCLK
 Text HLabel 7175 4150 0    60   Input ~ 0
 I2S_DATA_OUT
-Text HLabel 8450 4350 2    60   Input ~ 0
-I2S_WS
-Text HLabel 8450 4450 2    60   Input ~ 0
-I2S_BCLK
 Text HLabel 3250 4250 0    60   Input ~ 0
 3V3
 Wire Wire Line
@@ -281,4 +227,95 @@ Wire Wire Line
 	8700 3950 8575 3950
 Wire Wire Line
 	8575 3950 8575 4250
+$Comp
+L open-automation:R_100K R11
+U 1 1 5A1620AD
+P 4750 3950
+F 0 "R11" V 4750 3950 50  0000 C CNN
+F 1 "R_100k" V 4650 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 3950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-07100KL/311-100KGRCT-ND/729645" V 4830 3950 50  0001 C CNN
+F 4 "ERA-3AEB104V" V 4930 4050 60  0001 C CNN "Part Number"
+	1    4750 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5D9EF2BA
+P 8900 3950
+F 0 "J3" H 8980 3942 50  0000 L CNN
+F 1 "Conn_01x02" H 8980 3851 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8900 3950 50  0001 C CNN
+F 3 "~" H 8900 3950 50  0001 C CNN
+	1    8900 3950
+	1    0    0    -1  
+$EndComp
+Text HLabel 6900 4450 0    60   Input ~ 0
+3V3
+Text HLabel 5050 4150 2    60   Input ~ 0
+I2S_DATA_IN
+Wire Wire Line
+	4900 4150 5050 4150
+$Comp
+L open-automation:R_47.5 R12
+U 1 1 5A1620AC
+P 4750 4150
+F 0 "R12" V 4750 4150 50  0000 C CNN
+F 1 "R_47.5" V 4675 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 4150 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-0747R5L/311-47.5HRCT-ND/730201" V 4830 4150 50  0001 C CNN
+F 4 "ERJ-3EKF47R5V" V 4930 4250 60  0001 C CNN "Part Number"
+	1    4750 4150
+	0    1    1    0   
+$EndComp
+Text HLabel 1550 1700 0    60   Input ~ 0
+I2S_WS
+Text HLabel 1550 1600 0    60   Input ~ 0
+I2S_BCLK
+Wire Wire Line
+	1550 1700 1600 1700
+$Comp
+L open-automation:R_47.5 R9
+U 1 1 5DB177BD
+P 1750 1600
+F 0 "R9" V 1750 1600 50  0000 C CNN
+F 1 "R_47.5" V 1850 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 1600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-0747R5L/311-47.5HRCT-ND/730201" V 1830 1600 50  0001 C CNN
+F 4 "ERJ-3EKF47R5V" V 1930 1700 60  0001 C CNN "Part Number"
+	1    1750 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1600 1550 1600
+$Comp
+L open-automation:R_47.5 R14
+U 1 1 5DB177B1
+P 1750 1700
+F 0 "R14" V 1750 1700 50  0000 C CNN
+F 1 "R_47.5" V 1650 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 1700 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-0747R5L/311-47.5HRCT-ND/730201" V 1830 1700 50  0001 C CNN
+F 4 "ERJ-3EKF47R5V" V 1930 1800 60  0001 C CNN "Part Number"
+	1    1750 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 1950 1600 0    60   ~ 0
+BCLK
+Wire Wire Line
+	1950 1600 1900 1600
+Wire Wire Line
+	1950 1700 1900 1700
+Text Label 1950 1700 0    60   ~ 0
+WS
+Text Label 4600 4350 0    60   ~ 0
+WS
+Text Label 4600 4450 0    60   ~ 0
+BCLK
+Text Label 8450 4450 0    60   ~ 0
+BCLK
+Text Label 8450 4350 0    60   ~ 0
+WS
+Wire Wire Line
+	8450 4350 8350 4350
 $EndSCHEMATC

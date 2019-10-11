@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -80,10 +80,6 @@ Text Label 4550 4350 2    50   ~ 0
 FACT
 Wire Wire Line
 	4550 4350 4600 4350
-Wire Wire Line
-	6350 4950 6300 4950
-Wire Wire Line
-	5900 4950 5900 4900
 Text Label 6400 3750 0    50   ~ 0
 SDA
 Text Label 6400 3650 0    50   ~ 0
@@ -210,8 +206,8 @@ U 1 1 5CC69855
 P 3200 4300
 AR Path="/5ABD187E/5CC69855" Ref="SW?"  Part="1" 
 AR Path="/5A7BADDB/5CC69855" Ref="SW?"  Part="1" 
-AR Path="/5D2CEC1B/5CC69855" Ref="SW4"  Part="1" 
-F 0 "SW4" H 3200 4475 50  0000 C CNN
+AR Path="/5D2CEC1B/5CC69855" Ref="FACT1"  Part="1" 
+F 0 "FACT1" H 3200 4475 50  0000 C CNN
 F 1 "SW_PUSH" H 3175 4200 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 3200 4300 50  0001 C CNN
 F 3 "https://www.ckswitches.com/media/1479/kmr2.pdf" H 3200 4300 50  0001 C CNN
@@ -237,8 +233,8 @@ U 1 1 5CC68117
 P 2650 4300
 AR Path="/5ABD187E/5CC68117" Ref="SW?"  Part="1" 
 AR Path="/5A7BADDB/5CC68117" Ref="SW?"  Part="1" 
-AR Path="/5D2CEC1B/5CC68117" Ref="SW3"  Part="1" 
-F 0 "SW3" H 2650 4475 50  0000 C CNN
+AR Path="/5D2CEC1B/5CC68117" Ref="PROG1"  Part="1" 
+F 0 "PROG1" H 2650 4475 50  0000 C CNN
 F 1 "SW_PUSH" H 2625 4200 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 2650 4300 50  0001 C CNN
 F 3 "https://www.ckswitches.com/media/1479/kmr2.pdf" H 2650 4300 50  0001 C CNN
@@ -264,8 +260,8 @@ U 1 1 5CC89C1F
 P 2050 4300
 AR Path="/5ABD187E/5CC89C1F" Ref="SW?"  Part="1" 
 AR Path="/5A7BADDB/5CC89C1F" Ref="SW?"  Part="1" 
-AR Path="/5D2CEC1B/5CC89C1F" Ref="SW2"  Part="1" 
-F 0 "SW2" H 2050 4475 50  0000 C CNN
+AR Path="/5D2CEC1B/5CC89C1F" Ref="RESET1"  Part="1" 
+F 0 "RESET1" H 2050 4475 50  0000 C CNN
 F 1 "SW_PUSH" H 2025 4200 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 2050 4300 50  0001 C CNN
 F 3 "https://www.ckswitches.com/media/1479/kmr2.pdf" H 2050 4300 50  0001 C CNN
@@ -345,17 +341,6 @@ F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM188R61E106KA73D?
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-controller-rescue:GND-open-automation #PWR016
-U 1 1 5AF61DA0
-P 6350 4950
-F 0 "#PWR016" H 6350 4700 50  0001 C CNN
-F 1 "GND" H 6350 4800 50  0000 C CNN
-F 2 "" H 6350 4950 50  0000 C CNN
-F 3 "" H 6350 4950 50  0000 C CNN
-	1    6350 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L led-controller-rescue:R_10K-open-automation R8
 U 1 1 5CC267DD
 P 4300 1950
@@ -416,18 +401,6 @@ F 4 "RC0603JR-0710KL" V 2230 3800 60  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-controller-rescue:R_10K-open-automation R9
-U 1 1 5CC3139A
-P 6100 4950
-F 0 "R9" V 5893 4950 50  0000 C CNN
-F 1 "R_10K" V 5984 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 4950 50  0001 C CNN
-F 3 "" V 6180 4950 50  0001 C CNN
-F 4 "RC0603JR-0710KL" V 6280 5050 60  0001 C CNN "Part Number"
-	1    6100 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L led-controller-rescue:LED_G-open-automation D1
 U 1 1 5CC255BE
 P 2050 3300
@@ -438,32 +411,6 @@ F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 2050 3300 5
 F 4 "https://www.digikey.com/product-detail/en/wurth-electronics-inc/150060VS75000/732-4980-1-ND/4489904" H 2050 3300 50  0001 C CNN "Website"
 F 5 " 150060VS75000" H 2050 3300 50  0001 C CNN "Part Number"
 	1    2050 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L led-controller-rescue:LED_G-open-automation D2
-U 1 1 5CC26ACF
-P 2650 3300
-F 0 "D2" V 2689 3183 50  0000 R CNN
-F 1 "LED_G" V 2598 3183 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2650 3300 50  0001 C CNN
-F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 2650 3300 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/wurth-electronics-inc/150060VS75000/732-4980-1-ND/4489904" H 2650 3300 50  0001 C CNN "Website"
-F 5 " 150060VS75000" H 2650 3300 50  0001 C CNN "Part Number"
-	1    2650 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L led-controller-rescue:LED_G-open-automation D3
-U 1 1 5CC27619
-P 3200 3300
-F 0 "D3" V 3239 3183 50  0000 R CNN
-F 1 "LED_G" V 3148 3183 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3200 3300 50  0001 C CNN
-F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 3200 3300 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/wurth-electronics-inc/150060VS75000/732-4980-1-ND/4489904" H 3200 3300 50  0001 C CNN "Website"
-F 5 " 150060VS75000" H 3200 3300 50  0001 C CNN "Part Number"
-	1    3200 3300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -662,8 +609,6 @@ Wire Wire Line
 	6150 1900 6200 1900
 Wire Wire Line
 	6200 2000 6150 2000
-Text Label 6750 2300 0    50   ~ 0
-5V
 $Comp
 L Connector_Generic:Conn_02x07_Odd_Even J2
 U 1 1 5D48F3AA
@@ -677,8 +622,6 @@ F 3 "~" H 6400 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 2300 6200 2300
-Wire Wire Line
-	6750 2300 6700 2300
 Text Label 6150 2000 2    50   ~ 0
 FACT
 Text Label 6750 1800 0    50   ~ 0
@@ -707,10 +650,290 @@ Wire Wire Line
 	1650 1900 1600 1900
 Text HLabel 1600 1900 0    60   Input ~ 0
 IO22
+Text Label 6750 2300 0    50   ~ 0
+IO2
 Wire Wire Line
-	1650 950  1600 950 
-Text Label 1650 950  0    50   ~ 0
-5V
-Text HLabel 1600 950  0    60   Input ~ 0
-5V
+	6750 2300 6700 2300
+Text Label 7400 1550 2    50   ~ 0
+IO12
+Text Label 7400 1750 2    50   ~ 0
+IO13
+Text Label 7400 1950 2    50   ~ 0
+IO23
+Text Label 7400 2150 2    50   ~ 0
+IO22
+Text Label 7400 2750 2    50   ~ 0
+IO26
+Text Label 7400 2550 2    50   ~ 0
+IO25
+Text Label 7400 2350 2    50   ~ 0
+IO33
+Text Label 7400 2950 2    50   ~ 0
+IO2
+$Comp
+L led-controller-rescue:R_10K-open-automation R25
+U 1 1 5DA78726
+P 7650 2950
+F 0 "R25" V 7650 2950 50  0000 C CNN
+F 1 "R_10K" V 7550 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 2950 50  0001 C CNN
+F 3 "" V 7730 2950 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 3050 60  0001 C CNN "Part Number"
+	1    7650 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DA79EC4
+P 7900 2950
+AR Path="/5A8CA1FA/5DA79EC4" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DA79EC4" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DA79EC4" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 7900 2700 50  0001 C CNN
+F 1 "GND" V 7800 2900 50  0000 C CNN
+F 2 "" H 7900 2950 50  0000 C CNN
+F 3 "" H 7900 2950 50  0000 C CNN
+	1    7900 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2950 7850 2950
+Wire Wire Line
+	7450 2950 7400 2950
+$Comp
+L led-controller-rescue:R_10K-open-automation R24
+U 1 1 5DA834CC
+P 7650 2750
+F 0 "R24" V 7650 2750 50  0000 C CNN
+F 1 "R_10K" V 7550 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 2750 50  0001 C CNN
+F 3 "" V 7730 2750 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 2850 60  0001 C CNN "Part Number"
+	1    7650 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DA834D6
+P 7900 2750
+AR Path="/5A8CA1FA/5DA834D6" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DA834D6" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DA834D6" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 7900 2500 50  0001 C CNN
+F 1 "GND" V 7800 2700 50  0000 C CNN
+F 2 "" H 7900 2750 50  0000 C CNN
+F 3 "" H 7900 2750 50  0000 C CNN
+	1    7900 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2750 7850 2750
+$Comp
+L led-controller-rescue:R_10K-open-automation R23
+U 1 1 5DA88B6F
+P 7650 2550
+F 0 "R23" V 7650 2550 50  0000 C CNN
+F 1 "R_10K" V 7550 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 2550 50  0001 C CNN
+F 3 "" V 7730 2550 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 2650 60  0001 C CNN "Part Number"
+	1    7650 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DA88B79
+P 7900 2550
+AR Path="/5A8CA1FA/5DA88B79" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DA88B79" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DA88B79" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 7900 2300 50  0001 C CNN
+F 1 "GND" V 7800 2500 50  0000 C CNN
+F 2 "" H 7900 2550 50  0000 C CNN
+F 3 "" H 7900 2550 50  0000 C CNN
+	1    7900 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2550 7850 2550
+$Comp
+L led-controller-rescue:R_10K-open-automation R21
+U 1 1 5DA88B85
+P 7650 2350
+F 0 "R21" V 7650 2350 50  0000 C CNN
+F 1 "R_10K" V 7550 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 2350 50  0001 C CNN
+F 3 "" V 7730 2350 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 2450 60  0001 C CNN "Part Number"
+	1    7650 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DA88B8F
+P 7900 2350
+AR Path="/5A8CA1FA/5DA88B8F" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DA88B8F" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DA88B8F" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 7900 2100 50  0001 C CNN
+F 1 "GND" V 7800 2300 50  0000 C CNN
+F 2 "" H 7900 2350 50  0000 C CNN
+F 3 "" H 7900 2350 50  0000 C CNN
+	1    7900 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2350 7850 2350
+Wire Wire Line
+	7400 2750 7450 2750
+Wire Wire Line
+	7400 2550 7450 2550
+Wire Wire Line
+	7450 2350 7400 2350
+$Comp
+L led-controller-rescue:R_10K-open-automation R20
+U 1 1 5DAA1192
+P 7650 2150
+F 0 "R20" V 7650 2150 50  0000 C CNN
+F 1 "R_10K" V 7550 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 2150 50  0001 C CNN
+F 3 "" V 7730 2150 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 2250 60  0001 C CNN "Part Number"
+	1    7650 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DAA119C
+P 7900 2150
+AR Path="/5A8CA1FA/5DAA119C" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DAA119C" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DAA119C" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 7900 1900 50  0001 C CNN
+F 1 "GND" V 7800 2100 50  0000 C CNN
+F 2 "" H 7900 2150 50  0000 C CNN
+F 3 "" H 7900 2150 50  0000 C CNN
+	1    7900 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2150 7850 2150
+Wire Wire Line
+	7450 2150 7400 2150
+$Comp
+L led-controller-rescue:R_10K-open-automation R18
+U 1 1 5DAA11A9
+P 7650 1950
+F 0 "R18" V 7650 1950 50  0000 C CNN
+F 1 "R_10K" V 7550 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 1950 50  0001 C CNN
+F 3 "" V 7730 1950 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 2050 60  0001 C CNN "Part Number"
+	1    7650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DAA11B3
+P 7900 1950
+AR Path="/5A8CA1FA/5DAA11B3" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DAA11B3" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DAA11B3" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 7900 1700 50  0001 C CNN
+F 1 "GND" V 7800 1900 50  0000 C CNN
+F 2 "" H 7900 1950 50  0000 C CNN
+F 3 "" H 7900 1950 50  0000 C CNN
+	1    7900 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 1950 7850 1950
+$Comp
+L led-controller-rescue:R_10K-open-automation R17
+U 1 1 5DAA11BF
+P 7650 1750
+F 0 "R17" V 7650 1750 50  0000 C CNN
+F 1 "R_10K" V 7550 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 1750 50  0001 C CNN
+F 3 "" V 7730 1750 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 1850 60  0001 C CNN "Part Number"
+	1    7650 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DAA11C9
+P 7900 1750
+AR Path="/5A8CA1FA/5DAA11C9" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DAA11C9" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DAA11C9" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 7900 1500 50  0001 C CNN
+F 1 "GND" V 7800 1700 50  0000 C CNN
+F 2 "" H 7900 1750 50  0000 C CNN
+F 3 "" H 7900 1750 50  0000 C CNN
+	1    7900 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 1750 7850 1750
+$Comp
+L led-controller-rescue:R_10K-open-automation R16
+U 1 1 5DAA11D5
+P 7650 1550
+F 0 "R16" V 7650 1550 50  0000 C CNN
+F 1 "R_10K" V 7550 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 1550 50  0001 C CNN
+F 3 "" V 7730 1550 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 7830 1650 60  0001 C CNN "Part Number"
+	1    7650 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:GND-open-automation #PWR?
+U 1 1 5DAA11DF
+P 7900 1550
+AR Path="/5A8CA1FA/5DAA11DF" Ref="#PWR?"  Part="1" 
+AR Path="/5A7BADDB/5DAA11DF" Ref="#PWR?"  Part="1" 
+AR Path="/5D2CEC1B/5DAA11DF" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 7900 1300 50  0001 C CNN
+F 1 "GND" V 7800 1500 50  0000 C CNN
+F 2 "" H 7900 1550 50  0000 C CNN
+F 3 "" H 7900 1550 50  0000 C CNN
+	1    7900 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 1550 7850 1550
+Wire Wire Line
+	7400 1950 7450 1950
+Wire Wire Line
+	7400 1750 7450 1750
+Wire Wire Line
+	7450 1550 7400 1550
+$Comp
+L led-controller-rescue:LED_G-open-automation D2
+U 1 1 5CC26ACF
+P 2650 3300
+F 0 "D2" V 2689 3183 50  0000 R CNN
+F 1 "LED_G" V 2598 3183 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2650 3300 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 2650 3300 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/wurth-electronics-inc/150060VS75000/732-4980-1-ND/4489904" H 2650 3300 50  0001 C CNN "Website"
+F 5 " 150060VS75000" H 2650 3300 50  0001 C CNN "Part Number"
+	1    2650 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led-controller-rescue:LED_G-open-automation D3
+U 1 1 5CC27619
+P 3200 3300
+F 0 "D3" V 3239 3183 50  0000 R CNN
+F 1 "LED_G" V 3148 3183 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3200 3300 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 3200 3300 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/wurth-electronics-inc/150060VS75000/732-4980-1-ND/4489904" H 3200 3300 50  0001 C CNN "Website"
+F 5 " 150060VS75000" H 3200 3300 50  0001 C CNN "Part Number"
+	1    3200 3300
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
