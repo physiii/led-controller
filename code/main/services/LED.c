@@ -5,6 +5,9 @@
 #define BLUE  3
 #define WARM  4
 
+#define DEFAULT_PIXEL_COUNT CONFIG_DEFAULT_PIXEL_COUNT
+#define LED_OFF_TIME CONFIG_LED_OFF_TIME
+
 cJSON *LED_payload = NULL;
 
 char LED_service_message[2000];
@@ -304,6 +307,7 @@ int LED_main()
 {
   ws2812b_main();
   printf("starting LED service\n");
+  setPixelCount(DEFAULT_PIXEL_COUNT);
   xTaskCreate(&LED_service, "LED_service_task", 5000, NULL, 5, NULL);
   return 0;
 }

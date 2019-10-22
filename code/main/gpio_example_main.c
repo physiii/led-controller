@@ -26,8 +26,6 @@
 #define RESET_AT          0      // Set to a positive non-zero number to reset the position if this value is exceeded
 #define FLIP_DIRECTION    false  // Set to true to reverse the clockwise/counterclockwise sense
 
-#define NUMBER_OF_PIXELS  300
-
 int sw_debounce = 1;
 int switch_debounce_count = 0;
 int switch_debounce_tresh = 2;
@@ -224,7 +222,6 @@ void app_main()
 
     storage_init();
     LED_main();
-    setPixelCount(NUMBER_OF_PIXELS);
 
     // Initialise the rotary encoder device with the GPIOs for A and B signals
     rotary_encoder_info_t info = { 0 };
