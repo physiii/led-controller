@@ -16,7 +16,7 @@ menu "LED Config"
     config LED_OFF_TIME
         int "Delay time(m) turn off LED"
         range 0 60000
-        default 3600
+        default 60
         help
             If no activity detected, turn off LED array after this amount of minutes.
 
