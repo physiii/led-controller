@@ -14,7 +14,7 @@
 // Physical length of LED strip
 // #define PIXEL_COUNT (600)
 #define RMT_TX_CHANNEL RMT_CHANNEL_0
-#define RMT_TX_GPIO 18
+#define LED_IO CONFIG_LED_IO
 
 // RMT_BASECLK_APB is not defined anywhere I can see, assuming default 80MHz
 #define MY_RMT_BASECLK_APB (80)
@@ -126,7 +126,7 @@ static void ws2812_rmt_tx_init() {
     config.rmt_mode = RMT_MODE_TX;
     config.channel = RMT_TX_CHANNEL;
     config.clk_div = RMT_CLK_DIV;
-    config.gpio_num = RMT_TX_GPIO;
+    config.gpio_num = LED_IO;
     config.mem_block_num = 1; // don't know what this does but it needs to be so
 
     config.tx_config.loop_en = 0;

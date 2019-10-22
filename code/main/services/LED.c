@@ -18,7 +18,6 @@ int current_mode = 0;
 int number_of_modes = 4;
 int current_LED_level = 0;
 bool led_off_timer_expired = true;
-int led_off_time = 60;
 int led_off_count = 0;
 
 struct color
@@ -47,7 +46,7 @@ void start_led_off_timer(bool val)
 static void led_off_timer(void *pvParameter)
 {
   while (1) {
-    if (led_off_count > led_off_time && !led_off_timer_expired) {
+    if (led_off_count > LED_OFF_TIME && !led_off_timer_expired) {
       led_off_timer_expired = true;
       setPower(false);
     } else led_off_count++;
@@ -188,7 +187,7 @@ int setPixelCount(int num)
 {
   PIXEL_COUNT = num;
   // reset_pixels();
-  setPixels();
+  // setPixels();
   printf("LED: Pixel count (%d)\n", PIXEL_COUNT);
   return 0;
 }
@@ -228,13 +227,6 @@ static void LED_service(void *pvParameter)
     pixels.power=true;
   } else pixels.power = false;
   setPixels();
-  // vTaskDelay(100 / portTICK_PERIOD_MS);
-
-  // pixels.r = MAX_BRIGHTNESS;
-  // pixels.g = MAX_BRIGHTNESS;
-  // pixels.b = MAX_BRIGHTNESS;
-  // pixels.brightness = MAX_BRIGHTNESS;
-  // pixels.power = true;
 
   while (1) {
 
