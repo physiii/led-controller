@@ -18,6 +18,7 @@ int current_mode = 0;
 int number_of_modes = 4;
 int current_LED_level = 0;
 bool led_off_timer_expired = true;
+int led_off_count = 0;
 
 struct color
 {
