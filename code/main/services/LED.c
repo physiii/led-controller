@@ -20,7 +20,7 @@ int current_LED_level = 0;
 bool led_off_timer_expired = true;
 int led_off_count = 0;
 
-struct color
+struct pixel
 {
   int r;
   int g;
@@ -29,9 +29,33 @@ struct color
   bool power;
 };
 
-struct color pixels;
+struct fade_props
+{
+  struct pixel stop_color;
+  int steps_left;
+};
+
+struct pixel pixels;
+struct pixel pixels_temp;
+struct fade_props fade;
 
 void setPower(bool);
+int setPixels();
+
+static void led_fade_task(void *pvParameter)
+{
+  while (1) {
+    if (fade.steps_left > 0) {
+      // pixels.r = pixels.r + (pixels.r - fade.stop_color.r) / fade.steps_left;
+      fade.steps_left-=1;
+      pixels = fade.stop_color;
+    } else {
+      pixels = fade.stop_color;
+    }
+    setPixels();
+    vTaskDelay(10 / portTICK_PERIOD_MS);
+  }
+}
 
 void start_led_off_timer(bool val)
 {
@@ -119,8 +143,30 @@ int getBrightness()
   return pixels.brightness;
 }
 
+int fadeLED(int steps, struct pixel stop_color)
+{
+  fade.stop_color = stop_color;
+  fade.steps_left = steps;
+  return 0;
+}
+
 void setPower (bool val)
 {
+  // if (!pixels.power) {
+  //   pixels.power = true;
+  //   pixels_temp = pixels;
+  //   pixels.r = 0;
+  //   pixels.g = 0;
+  //   pixels.b = 0;
+  //   pixels.brightness = 0;
+  //   pixels.power = true;
+  //   setPixels();
+  //
+  //   fadeLED(100, pixels_temp);
+  // } else {
+  //   pixels.power = false;
+  // }
+
   pixels.power = val;
   setPixels();
   printf("LED: Power %d\n", pixels.power);
@@ -136,11 +182,6 @@ void toggleLED()
   pixels.power = !pixels.power;
   setPixels();
   printf("LED: Toggle %d\n", pixels.power);
-}
-
-int fadeLED(int start, int stop, int duration)
-{
-  return 0;
 }
 
 int setMode(int mode)
@@ -228,6 +269,10 @@ static void LED_service(void *pvParameter)
   } else pixels.power = false;
   setPixels();
 
+  pixels_temp = pixels;
+  fade.steps_left = 0;
+  fade.stop_color = pixels_temp;
+
   while (1) {
 
     //incoming messages from other services
@@ -278,7 +323,7 @@ static void LED_service(void *pvParameter)
 
       if (cJSON_GetObjectItem(LED_payload,"fade")) {
         int fade = cJSON_GetObjectItem(LED_payload,"fade")->valueint;
-        fadeLED(0,fade,0);
+        // fadeLED(0,fade,0);
         printf("[LED_service] level %d\n",fade);
       }
 
@@ -301,5 +346,6 @@ int LED_main()
   printf("starting LED service\n");
   setPixelCount(DEFAULT_PIXEL_COUNT);
   xTaskCreate(&LED_service, "LED_service_task", 5000, NULL, 5, NULL);
+  // xTaskCreate(&led_fade_task, "led_fade_task", 5000, NULL, 5, NULL);
   return 0;
 }

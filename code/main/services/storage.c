@@ -147,7 +147,7 @@ void store_u32(char * key, uint32_t value) {
         err = nvs_commit(my_handle);
         if (err == ESP_OK) {
 	  //printf("%s committed %s:%u\n", tag, key, value);
-	  printf("%s stored %s:%d\n",tag,key,value);
+	  //printf("%s stored %s:%d\n",tag,key,*value);
 	}
 	else {
 	  printf("%s commiting to flash failed!\n", tag);

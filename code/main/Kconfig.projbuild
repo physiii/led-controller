@@ -66,3 +66,14 @@ choice UID_PROGRAM_MODE
     config REMOVE_UID
         bool "Remove UID"
 endchoice
+
+menu "Rotary Encoder"
+
+    config HOLD_TIME
+        int "Time(s) to activate menu mode"
+        range 0 600
+        default 1
+        help
+            Amount of time you hold down the switch to activate.
+
+endmenu

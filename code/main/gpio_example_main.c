@@ -25,11 +25,11 @@
 #define ENABLE_HALF_STEPS false  // Set to true to enable tracking of rotary encoder at half step resolution
 #define RESET_AT          0      // Set to a positive non-zero number to reset the position if this value is exceeded
 #define FLIP_DIRECTION    false  // Set to true to reverse the clockwise/counterclockwise sense
+#define HOLD_TIME CONFIG_HOLD_TIME
 
 int sw_debounce = 1;
 int switch_debounce_count = 0;
 int switch_debounce_tresh = 2;
-int hold_thresh = 2;
 int hold_cnt = 0;
 
 int motion_delay_thresh = 10;
@@ -80,7 +80,7 @@ static void hold_task(void *pvParameter)
       hold_cnt++;
     } else hold_cnt=0;
 
-    if (hold_cnt > hold_thresh && !select_mode_enabled) {
+    if (hold_cnt > HOLD_TIME && !select_mode_enabled) {
       enter_scene_select_mode(true);
     }
 
@@ -246,7 +246,7 @@ void app_main()
             if (select_mode_enabled) {
               event.state.direction == ROTARY_ENCODER_DIRECTION_CLOCKWISE ? nextMode() : prevMode();
             } else {
-              setPower(true);
+              if (!getPower()) setPower(true);
               event.state.direction == ROTARY_ENCODER_DIRECTION_CLOCKWISE ? setBrightness(2 * getBrightness()+1) : setBrightness(0.4 * getBrightness());
             }
 
