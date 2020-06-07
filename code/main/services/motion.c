@@ -36,7 +36,7 @@ int load_motion_settings_from_flash() {
   }
 
   // Need JSON validation
-  motion_payload = cJSON_Parse(motion_settings_str);
+  // motion_payload = cJSON_Parse(motion_settings_str);
 
   return 0;
 }
@@ -53,8 +53,8 @@ static void motion_service(void *pvParameter)
       if (motion_level > motion_threshold) motion_duration++;
       if (motion_duration > motion_duration_threshold) {
         createMotionServiceMessage();
-        if (isArmed()) createAlarmServiceMessage();
-        createDimmerServiceMessage(BUTTON_UP);
+        // if (isArmed()) createAlarmServiceMessage();
+        // createDimmerServiceMessage(BUTTON_UP);
         vTaskDelay(MOTION_DEBOUNCE / portTICK_PERIOD_MS);
       }
     } else {
@@ -62,16 +62,15 @@ static void motion_service(void *pvParameter)
     }
 
     //incoming messages from other services
-    if (motion_payload) {
-      if (cJSON_GetObjectItem(motion_payload,"sensitivity")) {
-        int sensitivity = cJSON_GetObjectItem(motion_payload,"sensitivity")->valueint;
-        set_motion_threshold(sensitivity);
-        store_motion_settings(motion_payload);
-        lwsl_notice("[motion_service] sensitivity %d\n",sensitivity);
-      }
-
-      motion_payload = NULL;
-    }
+    // if (motion_payload) {
+    //   if (cJSON_GetObjectItem(motion_payload,"sensitivity")) {
+    //     int sensitivity = cJSON_GetObjectItem(motion_payload,"sensitivity")->valueint;
+    //     set_motion_threshold(sensitivity);
+    //     store_motion_settings(motion_payload);
+    //   }
+		//
+    //   motion_payload = NULL;
+    // }
 
     // printf("Motion Level:\t%d\n",motion_level);
     vTaskDelay(400 / portTICK_PERIOD_MS);

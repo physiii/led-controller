@@ -7,10 +7,10 @@ void storage_init () {
   esp_err_t err = nvs_flash_init();
   if (err == ESP_ERR_NVS_NO_FREE_PAGES) {
     // NVS partition was truncated and needs to be erased
-    const esp_partition_t* nvs_partition = esp_partition_find_first(
-      ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_NVS, NULL);
-      assert(nvs_partition && "partition table must have an NVS partition");
-      ESP_ERROR_CHECK( esp_partition_erase_range(nvs_partition, 0, nvs_partition->size) );
+    // const esp_partition_t* nvs_partition = esp_partition_find_first(
+    //   ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_NVS, NULL);
+    //   assert(nvs_partition && "partition table must have an NVS partition");
+    //   ESP_ERROR_CHECK( esp_partition_erase_range(nvs_partition, 0, nvs_partition->size) );
       // Retry nvs_flash_init
       err = nvs_flash_init();
   }
@@ -64,12 +64,12 @@ void store_char(char * key, char * value) {
 
     err = nvs_set_str(my_handle, key, value);
     if (err == ESP_OK) {
-	     printf("%s nvs_set_str for %s\n", tag, key);
+	     // printf("%s nvs_set_str for %s\n", tag, key);
 	  } else printf("%s write to flash failed\n", tag);
 
     err = nvs_commit(my_handle);
     if (err == ESP_OK) {
-	     printf("%s nvs_commit %s:%s\n", tag, key, value);
+	     // printf("%s nvs_commit %s:%s\n", tag, key, value);
 	  } else printf("%s commiting to flash failed!\n", tag);
 
     nvs_close(my_handle);
@@ -77,52 +77,15 @@ void store_char(char * key, char * value) {
   storage_in_use = false;
 }
 
-void store_char_old(char * key, char * value) {
-  nvs_handle my_handle;
-  esp_err_t err = nvs_open("storage", NVS_READWRITE, &my_handle);
-  if (err != ESP_OK) {
-      printf("Error (%d) opening NVS handle\n", err);
-  } else {
-	  size_t size;
-    err = nvs_get_str(my_handle, key, NULL, &size);
-	  char* previous_value = malloc(size);
-	  nvs_get_str(my_handle, key, previous_value, &size);
-
-    switch (err) {
-      case ESP_OK:
-      //printf(tag,"Done\n");
-      printf("%s Current value: %s\n", tag, previous_value);
-      break;
-    case ESP_ERR_NVS_NOT_FOUND:
-      printf("%s value not initialized %s\n",tag, key);
-      break;
-    default :
-      printf("%s Error (%d) reading %s\n", tag, err, key);
-    }
-
-    err = nvs_set_str(my_handle, key, value);
-    if (err == ESP_OK) {
-	     printf("%s nvs_set_str for %s\n", tag, key);
-	  } else printf("%s write to flash failed\n", tag);
-
-    esp_intr_noniram_enable();
-    err = nvs_commit(my_handle);
-    if (err == ESP_OK) {
-	     printf("%s nvs_commit %s:%s\n", tag, key, value);
-	  } else printf("%s commiting to flash failed!\n", tag);
-
-    nvs_close(my_handle);
-  }
-}
-
 void store_u32(char * key, uint32_t value) {
     esp_err_t err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES) {
         // NVS partition was truncated and needs to be erased
-        const esp_partition_t* nvs_partition = esp_partition_find_first(
-                ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_NVS, NULL);
-        assert(nvs_partition && "partition table must have an NVS partition");
-        ESP_ERROR_CHECK( esp_partition_erase_range(nvs_partition, 0, nvs_partition->size) );
+        // const esp_partition_t* nvs_partition = esp_partition_find_first(
+        //         ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_NVS, NULL);
+        // assert(nvs_partition && "partition table must have an NVS partition");
+        // ESP_ERROR_CHECK( esp_partition_erase_range(nvs_partition, 0, nvs_partition->size) );
+
         // Retry nvs_flash_init
         err = nvs_flash_init();
     }
@@ -137,7 +100,7 @@ void store_u32(char * key, uint32_t value) {
         err = nvs_set_u32(my_handle, key, value);
 
         if (err == ESP_OK) {
-	  // printf("%s %s:%u\n", tag, key, value);
+	  printf("%s %s:%u\n", tag, key, value);
 	}
 	else {
 	  printf("%s write failed %u\n", tag, value);
@@ -164,10 +127,10 @@ uint32_t get_u32(char * key, uint32_t value) {
     esp_err_t err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES) {
         // NVS partition was truncated and needs to be erased
-        const esp_partition_t* nvs_partition = esp_partition_find_first(
-                ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_NVS, NULL);
-        assert(nvs_partition && "partition table must have an NVS partition");
-        ESP_ERROR_CHECK( esp_partition_erase_range(nvs_partition, 0, nvs_partition->size) );
+        // const esp_partition_t* nvs_partition = esp_partition_find_first(
+        //         ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_NVS, NULL);
+        // assert(nvs_partition && "partition table must have an NVS partition");
+        // ESP_ERROR_CHECK( esp_partition_erase_range(nvs_partition, 0, nvs_partition->size) );
         // Retry nvs_flash_init
         err = nvs_flash_init();
     }
