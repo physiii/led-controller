@@ -28,6 +28,7 @@ int set_brightness(int);
 void debounce_pir();
 bool isArmed();
 void createAlarmServiceMessage();
+void send_state(cJSON*);
 
 int seconds_in_minute = 60;
 int minutes_in_hour = 60;
@@ -59,9 +60,9 @@ bool connected_to_server = false;
 static char* TAG = "open-automation";
 
 #include "services/store.c"
-#include "services/LED.c"
+#include "services/led.c"
 #include "services/drivers/io.c"
-#include "services/rotary_encoder.c"
-#include "services/motion.c"
+// #include "services/rotary_encoder.c"
+// #include "services/motion.c"
 #include "services/websocket.c"
 #include "services/station.c"

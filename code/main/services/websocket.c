@@ -27,13 +27,13 @@ bool connect_to_relay = true;
 static const char *SERVER_URI = CONFIG_SERVER_URI;
 
 void
-send_state()
+send_state(cJSON* state)
 {
 	char *state_str = cJSON_PrintUnformatted(state);
 	snprintf(wss_data_out,sizeof(wss_data_out),""
 	"{\"event_type\":\"load\","
 	" \"payload\":{\"services\":["
-	"{\"id\":\"pod_1\", \"type\":\"grow-pod\","
+	"{\"id\":\"light_1\", \"type\":\"light\","
 	"\"state\":%s"
 	"}]}}", state_str);
 	free(state_str);
@@ -86,6 +86,8 @@ int
 handle_event(char * event_type)
 {
 
+  // printf("looking for event type: %s\n",event_type);
+
 	if (strcmp(event_type,"settings")==0) {
 		// dimmer_payload = payload;
 		// payload = NULL;
@@ -99,10 +101,15 @@ handle_event(char * event_type)
 		return 1;
 	}
 
-  // printf("looking for event type: %s\n",event_type);
 	if (strcmp(event_type,"dimmer")==0) {
 		// dimmer_payload = payload;
 		// payload = NULL;
+		return 1;
+	}
+
+	if (strcmp(event_type,"light")==0) {
+		led_payload = payload;
+		payload = NULL;
 		return 1;
 	}
 
@@ -203,7 +210,6 @@ ws_event_handler(cJSON * root)
 		payload = cJSON_GetObjectItemCaseSensitive(root,"payload");
 	} else {
 		ESP_LOGW(TAG, "payload key not found");
-		return 0;
 	}
 
 	// Reply with callback

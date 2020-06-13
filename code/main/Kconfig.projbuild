@@ -53,9 +53,10 @@ menu "LED Config"
     config DEFAULT_PIXEL_COUNT
         int "Pixel Count"
         range 0 1500
-        default 1000
+        default 600
         help
             Set number of pixels on strip or panel.
+
 endmenu
 
 menu "Keypad IO"
